@@ -1,5 +1,5 @@
 {
-    "non-interactive": false,
+    "non-interactive": true,
     "dry-run": false,
     "verbose": true,
     "pkgFiles": ["package.json"],
@@ -7,7 +7,7 @@
     "commitMessage": "Release %s",
     "tagName": "%s",
     "tagAnnotation": "Release %s",
-    "buildCommand": "cp package.json dtrn.json",
+    "buildCommand": "npm run dist",
     "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]",
     "requireCleanWorkingDir": false,
     "src": {
