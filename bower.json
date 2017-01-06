@@ -1,0 +1,23 @@
+{
+  "name": "pdftex.js",
+  "description": "pdftex in pure js",
+  "main": "pdftex.js",
+  "authors": [
+    "Kevin Jahns <kevin.jahns@rwth-aachen.de>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "pdftex",
+    "latex",
+    "texlive",
+    "tex"
+  ],
+  "homepage": "https://github.com/dmonad/pdftex.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

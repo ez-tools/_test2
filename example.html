@@ -13,24 +13,18 @@
     <textarea>
 \documentclass[12pt]{article}
 \usepackage{amsmath}
+\usepackage{graphicx}
+
 \title{pdftex.js}
 \author{Compile \TeX{} directly in your browser!}
 \date{\today}
 \begin{document}
   \maketitle
-  \TeX{}live.js is a compiler for the \TeX{}
-  typesetting program created using Mozilla's Emscripten
-  Compiler. It offers programmable desktop
-  publishing features and extensive facilities for
-  automating most aspects of typesetting and desktop
-  publishing, including numbering and cross-referencing,
-  tables and figures, page layout, bibliographies, and
-  much more. It supports \LaTeX{} which was originally written
-  in 1984 by Leslie Lamport and has become the dominant method for
-  using \TeX;
 
-  % This is a comment, not shown in final output.
-  % The following shows typesetting power of LaTeX
+  \begin{center}
+    \includegraphics[width=0.5\textwidth]{https://assets-cdn.github.com/images/modules/logos_page/Octocat.png}
+  \end{center}
+
   \begin{align}
     E_0 &= mc^2    \\
     E &= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}

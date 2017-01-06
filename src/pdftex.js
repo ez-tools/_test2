@@ -26,6 +26,7 @@ class PdfTeXCompilation {
     var self = this
     this.source = source
     this._options = options || {}
+
     if (options.debug) {
       this.on('err', (err) => { console.error(err) })
       this.on('log', (out) => { console.log(out) })
@@ -66,8 +67,14 @@ export default function pdftex (source, options) {
   if (currentWorker != null) {
     currentWorker.terminate()
   }
-  currentWorker = nextWorker
-  nextWorker = new PdfTeXCompilation()
+  if (nextWorker != null) {
+    currentWorker = nextWorker
+  } else {
+    currentWorker = new PdfTeXCompilation()
+  }
+  currentWorker.on('finish', function () {
+    nextWorker = new PdfTeXCompilation()
+  })
 
   currentWorker._compile(source, options)
   return currentWorker
