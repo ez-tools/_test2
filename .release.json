@@ -1,0 +1,38 @@
+{
+    "non-interactive": false,
+    "dry-run": false,
+    "verbose": true,
+    "pkgFiles": ["package.json"],
+    "increment": "patch",
+    "commitMessage": "Release %s",
+    "tagName": "%s",
+    "tagAnnotation": "Release %s",
+    "buildCommand": "cp package.json dtrn.json",
+    "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]",
+    "requireCleanWorkingDir": false,
+    "src": {
+        "pushRepo": null,
+        "beforeStartCommand": false,
+        "beforeStageCommand": false,
+        "afterReleaseCommand": false
+    },
+    "dist": {
+        "repo": "git@github.com:ez-tools/_test2#dist",
+        "stageDir": ".stage",
+        "pkgFiles": null,
+        "beforeStageCommand": "",
+        "afterReleaseCommand": ""
+    },
+    "npm": {
+        "publish": false,
+        "publishPath": ".",
+        "tag": "latest",
+        "private": false,
+        "forcePublishSourceRepo": false
+    },
+    "github": {
+        "release": false,
+        "releaseName": "Release %s",
+        "tokenRef": "GITHUB_TOKEN"
+    }
+}
