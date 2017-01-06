@@ -13,4 +13,4 @@ src/pdftex-worker.js.map
 src/texlive
 src/texlive-files.js
 src/texlive.lst
-
+.stage

@@ -20,7 +20,7 @@
         "repo": "git@github.com:ez-tools/_test2#dist",
         "stageDir": ".stage",
         "pkgFiles": null,
-        "beforeStageCommand": "",
+        "beforeStageCommand": "cp -rf * .stage",
         "afterReleaseCommand": ""
     },
     "npm": {
