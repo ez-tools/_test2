@@ -14,7 +14,7 @@
     "rollup-watch": "^3.2.1"
   },
   "scripts": {
-    "dist-worker": "cd src && make redo-worker",
+    "dist-worker": "cd src && make redo-worker-dist",
     "develop": "concurrently -k \"rollup src/pdftex.js -o pdftex.js -f umd -w -m -n pdftex\" \"http-server\"",
     "dist": "npm run dist-worker && rollup src/pdftex.js -o pdftex.js -f umd -m -c -n pdftex",
     "publish": "release-it"
