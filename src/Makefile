@@ -21,7 +21,7 @@ configure: unpack_pdftex
 		CC=emcc CFLAGS=-DELIDE_CODE
 
 texlive-files.js: ./texlive
-	echo 'export var texliveFiles = [' > texlive-files.js
+	echo 'var texliveFiles = [' > texlive-files.js
 	find texlive -type d -exec echo \'{}/.\', \; | sed "s/^'texlive/'/g" >> texlive-files.js
 	find texlive -type f -exec echo \'{}\', \; | sed "s/^'texlive/'/g" >> texlive-files.js
 	echo ']' >> texlive-files.js
