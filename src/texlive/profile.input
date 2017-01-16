@@ -1,6 +1,6 @@
 selected_scheme scheme-basic
-TEXDIR /home/dmonad/git/pdftex.js/src/texlive
-TEXMFLOCAL /home/dmonad/git/pdftex.js/src/texlive/texmf-local
-TEXMFSYSVAR /home/dmonad/git/pdftex.js/src/texlive/texmf-var
-TEXMFSYSCONFIG /home/dmonad/git/pdftex.js/src/texlive/texmf-config
-TEXMFVAR /home/dmonad/git/pdftex.js/src/home/texmf-var
+TEXDIR /home/dmonad/git/_test2/src/texlive
+TEXMFLOCAL /home/dmonad/git/_test2/src/texlive/texmf-local
+TEXMFSYSVAR /home/dmonad/git/_test2/src/texlive/texmf-var
+TEXMFSYSCONFIG /home/dmonad/git/_test2/src/texlive/texmf-config
+TEXMFVAR /home/dmonad/git/_test2/src/home/texmf-var
