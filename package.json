@@ -1,6 +1,6 @@
 {
   "name": "pdftex.js",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "pdftex in pure js",
   "main": "src/pdftex.js",
   "dependencies": {},
@@ -15,7 +15,7 @@
     "rollup-watch": "^3.2.1"
   },
   "scripts": {
-    "dist-worker": "cd src && make redo-worker-dist",
+    "dist-worker": "cd src && make dist",
     "develop": "concurrently -k \"rollup src/pdftex.js -o pdftex.js -f umd -w -m -n pdftex\" \"http-server\"",
     "dist": "npm run dist-worker && rollup src/pdftex.js -o pdftex.js -f umd -m -c -n pdftex",
     "publish": "release-it"
