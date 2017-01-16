@@ -107,14 +107,14 @@ redo-worker-dist:
 	cat texlive-files.js > tmp.js
 	cat pdftex-worker-pre.js >> tmp.js
 	OBJFILES=$$(for i in `find ${SOURCE_DIR}/build-pdftex/texk/web2c/lib ${SOURCE_DIR}/build-pdftex/texk/kpathsea -name '*.o'` ; do llvm-nm $$i | grep main >/dev/null || echo $$i ; done) && \
-		emcc -s INVOKE_RUN=0 --memory-init-file 0 -v --closure 0 -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 $$OBJFILES pdftex.bc -o pdftex-worker.js --post-js pdftex-worker-post.js --pre-js tmp.js -O3
+		emcc -s INVOKE_RUN=0 --memory-init-file 1 -v --closure 0 -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 $$OBJFILES pdftex.bc -o pdftex-worker.js --post-js pdftex-worker-post.js --pre-js tmp.js -O3
 	rm tmp.js
 
 redo-worker:
 	cat texlive-files.js > tmp.js
 	cat pdftex-worker-pre.js >> tmp.js
 	OBJFILES=$$(for i in `find ${SOURCE_DIR}/build-pdftex/texk/web2c/lib ${SOURCE_DIR}/build-pdftex/texk/kpathsea -name '*.o'` ; do llvm-nm $$i | grep main >/dev/null || echo $$i ; done) && \
-		emcc -s INVOKE_RUN=0 --memory-init-file 0 -v --closure 0 -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 $$OBJFILES pdftex.bc -o pdftex-worker.js --post-js pdftex-worker-post.js --pre-js tmp.js # -O3
+		emcc -s INVOKE_RUN=0 --memory-init-file 1 -v --closure 0 -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 $$OBJFILES pdftex.bc -o pdftex-worker.js --post-js pdftex-worker-post.js --pre-js tmp.js # -O3
 	rm tmp.js
 
 clean:
@@ -127,6 +127,7 @@ clean:
 	rm -rf latex_format
 	rm -rf texlive
 	rm -f install-tl-unx.tar.gz
+	rm -f texlive-files.js
 
 ifeq ("x","y")
 --------------------------------

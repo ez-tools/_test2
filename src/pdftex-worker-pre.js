@@ -5,6 +5,7 @@ Module.noInitialRun = true
 
 Module.print = function (log) { postMessage({ type: 'log', value: log }) }
 Module.printErr = function (err) { postMessage({ type: 'err', value: err }) }
+Module.calledRun = true
 
 function start (source, options) {
   options = options || {}
@@ -32,7 +33,7 @@ function start (source, options) {
       if (url.indexOf(location.origin) !== 0 && options.proxy !== false) {
         url = options.proxy + url
       }
-      Module.FS_createLazyFile('/', filename, url, true, true)
+      Module["FS_createLazyFile"]('/', filename, url, true, true)
       source = source.replace(new RegExp(f, 'g'), '{/' + filename + '}')
     })
   }
@@ -54,7 +55,8 @@ function start (source, options) {
 
   try {
     shouldRunNow = true
-    FS.writeFile('input.tex', source)
+    Module.calledRun = false
+    FS.writeFile('/input.tex', source)
     Module.run(['-interaction=nonstopmode', '-output-format', 'pdf', 'input.tex'])
   } catch (err) {
     // log

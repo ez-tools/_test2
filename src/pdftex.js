@@ -28,8 +28,12 @@ class PdfTeXCompilation {
     this._options = options || {}
 
     if (options.debug) {
-      this.on('err', (err) => { console.error(err) })
-      this.on('log', (out) => { console.log(out) })
+      this.on('err', (err) => {
+        console.error(err)
+      })
+      this.on('log', (out) => {
+        console.log(out)
+      })
     }
     this.whenReady(function () {
       self.worker.postMessage({ type: 'start', source: source })

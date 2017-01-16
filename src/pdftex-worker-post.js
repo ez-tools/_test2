@@ -1,5 +1,4 @@
 Module.thisProgram ='/latex'
-Module.calledRun = false
 
 postMessage({'type': 'ready'})
 
