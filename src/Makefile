@@ -1,18 +1,27 @@
+# Contribution & Copyright: This file was originally copied from https://github.com/manuels/texlive.js
+# It is therefore GPL licensed https://www.gnu.org/licenses/gpl-3.0.en.html
+
 SOURCE_DIR=pdftex-1.40.11
 PDFTEX_URL=http://mirrors.ctan.org/obsolete/systems/pdftex/pdftex-1.40.11.zip
 BASE_TEXLIVE_URL=http://mirrors.ctan.org/macros/latex/base.zip
 #BASE_TEXLIVE_URL=ftp://ftp.ctan.org/pub/tex/macros/latex/base.zip
 SHELL=bash
-all: pdftex-worker.js create_latex_format texlive.lst
-#all: unpack_pdftex create_binary_pdftex configure get_texlive unpack_texlive create_latex_format compile_bc compile_js
+all: pdftex-worker.js
 
 pdftex-1.40.11.zip:
 	wget $(PDFTEX_URL)
 
-unpack_pdftex: pdftex-1.40.11.zip
+install-tl-unx.tar.gz:
+	wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+
+pdftex-1.40.11: pdftex-1.40.11.zip
 	unzip -o pdftex-1.40.11.zip
 
-configure: unpack_pdftex
+binary/pdftex-1.40.11: pdftex-1.40.11.zip
+	mkdir -p binary
+	unzip -o pdftex-1.40.11.zip -d binary
+
+configure: pdftex-1.40.11
 	-@cd ${SOURCE_DIR} && \
 	EMCONFIGURE_JS=0 emconfigure ./build-pdftex.sh -C \
 		--disable-all-pkgs \
@@ -20,27 +29,17 @@ configure: unpack_pdftex
 		--enable-static \
 		CC=emcc CFLAGS=-DELIDE_CODE
 
-texlive-files.js: ./texlive
+texlive-files.js: ./texlive/texmf-var/web2c/pdftex/latex.fmt ./texlive
 	echo 'var texliveFiles = [' > texlive-files.js
 	find texlive -type d -exec echo \'{}/.\', \; | sed "s/^'texlive/'/g" >> texlive-files.js
 	find texlive -type f -exec echo \'{}\', \; | sed "s/^'texlive/'/g" >> texlive-files.js
 	echo ']' >> texlive-files.js
 
-texlive.lst: ./texlive
-	find texlive -type d -exec echo {}/. \; | sed 's/^texlive//g' >texlive.lst
-	find texlive -type f | sed 's/^texlive//g' >>texlive.lst
-
-./binary/${SOURCE_DIR}/build-pdftex/texk/web2c/pdftex: pdftex-1.40.11.zip
-	mkdir -p binary
-	cd binary && wget $(PDFTEX_URL)
-	cd binary && unzip -o pdftex-1.40.11.zip
+./binary/${SOURCE_DIR}/build-pdftex/texk/web2c/pdftex: binary/pdftex-1.40.11
 	cd binary && cd ${SOURCE_DIR} && ./build-pdftex.sh -C \
 		--disable-all-pkgs \
 		--enable-pdftex \
 		--enable-static
-
-install-tl-unx.tar.gz:
-	wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 
 ./texlive: install-tl-unx.tar.gz
 	mkdir -p texlive
@@ -51,18 +50,14 @@ install-tl-unx.tar.gz:
 	echo TEXMFSYSVAR `pwd`/texlive/texmf-var >> texlive/profile.input
 	echo TEXMFSYSCONFIG `pwd`/texlive/texmf-config >> texlive/profile.input
 	echo TEXMFVAR `pwd`/home/texmf-var >> texlive/profile.input
-
 	cd texlive && ./install-tl-*/install-tl -profile profile.input
-	echo "Removing unnecessary files"
 	cd texlive && rm -rf bin readme* tlpkg install* *.html texmf-dist/doc texmf-var/web2c
-	echo ""
-	echo "Done! Please run 'make texlive.lst' now!"
 
 ./latex_format/base.zip:
 	mkdir -p latex_format
 	cd latex_format && wget ${BASE_TEXLIVE_URL} && unzip -o base.zip
 
-create_latex_format: ./latex_format/base.zip ./binary/${SOURCE_DIR}/build-pdftex/texk/web2c/pdftex ./texlive
+./texlive/texmf-var/web2c/pdftex/latex.fmt: ./latex_format/base.zip ./binary/${SOURCE_DIR}/build-pdftex/texk/web2c/pdftex ./texlive
 	mkdir -p latex_format
 	cd latex_format && unzip -o base.zip
 	cd latex_format/base && ../../binary/${SOURCE_DIR}/build-pdftex/texk/web2c/pdftex -ini -etex unpack.ins
@@ -71,8 +66,10 @@ create_latex_format: ./latex_format/base.zip ./binary/${SOURCE_DIR}/build-pdftex
 	mkdir -p ./texlive/texmf-var/web2c/pdftex/
 	cp latex_format/base/latex.fmt ./texlive/texmf-var/web2c/pdftex/
 
-compile_bc:	 ./binary/${SOURCE_DIR}/build-pdftex/texk/web2c/pdftex configure ./texlive
+./${SOURCE_DIR}/src/texk/kpathsea/texmf.cnf: ./texlive
 	find texlive -mindepth 2 -name texmf.cnf -exec cp {} ./${SOURCE_DIR}/src/texk/kpathsea \;
+
+compile_bc: ./binary/${SOURCE_DIR}/build-pdftex/texk/web2c/pdftex configure ./${SOURCE_DIR}/src/texk/kpathsea/texmf.cnf
 	cp ./binary/${SOURCE_DIR}/build-pdftex/texk/web2c/web2c/{fixwrites,web2c,splitup} ${SOURCE_DIR}/build-pdftex/texk/web2c/web2c/
 	chmod +x ${SOURCE_DIR}/build-pdftex/texk/web2c/web2c/fixwrites
 	chmod +x ${SOURCE_DIR}/build-pdftex/texk/web2c/web2c/web2c
@@ -85,7 +82,6 @@ compile_bc:	 ./binary/${SOURCE_DIR}/build-pdftex/texk/web2c/pdftex configure ./t
 
 	-cd ${SOURCE_DIR}/build-pdftex/texk/web2c && emmake make pdftex  -o tangle -o tie -o web2c -o pdftex-pool.c
 
-
 compile_kpathsea: configure
 	-cd ${SOURCE_DIR}/build-pdftex/texk/kpathsea && make clean
 	-cd ${SOURCE_DIR}/build-pdftex/texk/kpathsea && emmake make CC=emcc CFLAGS=-DELIDE_CODE
@@ -94,23 +90,23 @@ compile_lib: configure
 	-cd ${SOURCE_DIR}/build-pdftex/texk/web2c/lib && make clean
 	-cd ${SOURCE_DIR}/build-pdftex/texk/web2c/lib && emmake make CC=emcc CFLAGS=-DELIDE_CODE
 
-pdftex-worker.js: compile_bc compile_lib compile_kpathsea
+pdftex-worker.js: compile_bc compile_lib compile_kpathsea texlive-files.js
 	cat texlive-files.js > tmp.js
 	cat pdftex-worker-pre.js >> tmp.js
 	opt -strip-debug ${SOURCE_DIR}/build-pdftex/texk/web2c/pdftex >pdftex.bc
 	OBJFILES=$$(for i in `find ${SOURCE_DIR}/build-pdftex/texk/web2c/lib ${SOURCE_DIR}/build-pdftex/texk/kpathsea -name '*.o'` ; do llvm-nm $$i | grep main >/dev/null || echo $$i ; done) && \
-		emcc -s INVOKE_RUN=0 --memory-init-file 0 -v --closure 0 -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 $$OBJFILES pdftex.bc -o pdftex-worker.js --post-js pdftex-worker-post.js --pre-js pdftex-worker-pre.js -O3
+		emcc -s INVOKE_RUN=0 --memory-init-file 1 -v --closure 0 -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 $$OBJFILES pdftex.bc -o pdftex-worker.js --post-js pdftex-worker-post.js --pre-js tmp.js -O3
 #		emcc -v --minify 0 --closure 0 -s FS_LOG=1 -s TOTAL_MEMORY=67108864 -O2 -g3 $$OBJFILES pdftex.bc -s INVOKE_RUN=0 --pre-js pre.js --post-js post.js -o pdftex-worker-generated.js
 	rm tmp.js
 
-redo-worker-dist:
+dist: pdftex-worker.js
 	cat texlive-files.js > tmp.js
 	cat pdftex-worker-pre.js >> tmp.js
 	OBJFILES=$$(for i in `find ${SOURCE_DIR}/build-pdftex/texk/web2c/lib ${SOURCE_DIR}/build-pdftex/texk/kpathsea -name '*.o'` ; do llvm-nm $$i | grep main >/dev/null || echo $$i ; done) && \
 		emcc -s INVOKE_RUN=0 --memory-init-file 1 -v --closure 0 -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 $$OBJFILES pdftex.bc -o pdftex-worker.js --post-js pdftex-worker-post.js --pre-js tmp.js -O3
 	rm tmp.js
 
-redo-worker:
+dev: pdftex-worker.js
 	cat texlive-files.js > tmp.js
 	cat pdftex-worker-pre.js >> tmp.js
 	OBJFILES=$$(for i in `find ${SOURCE_DIR}/build-pdftex/texk/web2c/lib ${SOURCE_DIR}/build-pdftex/texk/kpathsea -name '*.o'` ; do llvm-nm $$i | grep main >/dev/null || echo $$i ; done) && \
@@ -118,10 +114,9 @@ redo-worker:
 	rm tmp.js
 
 clean:
-	rm -f pdftex-worker.js
+	rm -f pdftex-worker.js pdftex-worker.js.mem
 	rm -f latex.fmt
 	rm -f pdftex.bc
-	rm -f texlive.lst
 	rm -rf ${SOURCE_DIR} pdftex-1.40.11.zip
 	rm -rf binary
 	rm -rf latex_format
