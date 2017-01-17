@@ -20,14 +20,14 @@
         "repo": "git@github.com:ez-tools/_test2#dist",
         "baseDir": ".",
         "stageDir": ".stage",
-        "files": ["*", "src/pdftex-worker.*", "src/texlive/**"],
+        "files": ["README.md", "pdftex.js*", "package.json", "example.htm", "bower.json", "src/pdftex-worker.js*", "src/texlive/**"],
         "pkgFiles": null,
-        "beforeStageCommand": "",
+        "beforeStageCommand": "rm -rf *",
         "afterReleaseCommand": ""
     },
     "npm": {
         "publish": false,
-        "publishPath": ".",
+        "publishPath": ".stage",
         "tag": "latest",
         "private": false,
         "forcePublishSourceRepo": false
