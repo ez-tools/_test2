@@ -26,10 +26,11 @@
           "package.json",
           "example.html",
           "bower.json",
+          "./src/pdftex-worker.js*",
           "src/texlive/**"
         ],
         "pkgFiles": null,
-        "beforeStageCommand": "cp ../src/pdftex-worker.js src && ls ../src -al && ls -al ../src",
+        "beforeStageCommand": "",
         "afterReleaseCommand": ""
     },
     "npm": {
