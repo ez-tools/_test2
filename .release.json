@@ -20,7 +20,16 @@
         "repo": "git@github.com:ez-tools/_test2#dist",
         "baseDir": ".",
         "stageDir": ".stage",
-        "files": ["README.md", "pdftex.js*", "package.json", "example.htm", "bower.json", "src/pdftex-worker.js*", "src/texlive/**"],
+        "files": [
+          "README.md",
+          "pdftex.js*",
+          "package.json",
+          "example.html",
+          "bower.json",
+          "src/pdftex-worker.js",
+          "src/pdftex-worker.js.mem",
+          "src/texlive/**"
+        ],
         "pkgFiles": null,
         "beforeStageCommand": "",
         "afterReleaseCommand": ""
