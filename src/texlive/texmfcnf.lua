@@ -11,7 +11,7 @@ return {
   content = {
     variables = {
       TEXMFLOCAL = "selfautoparent:/texmf-local",
-      TEXMFVAR = "/home/dmonad/git/_test2/src/home/texmf-var",
+      TEXMFVAR = "/home/dmonad/git/pdftex.js/src/home/texmf-var",
     },
   },
 }
