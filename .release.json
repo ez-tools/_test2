@@ -26,8 +26,8 @@
           "package.json",
           "example.html",
           "bower.json",
-          "src/pdftex-worker.js",
-          "src/pdftex-worker.js.mem",
+          "./src/pdftex-worker.js",
+          "./src/pdftex-worker.js.mem",
           "src/texlive/**"
         ],
         "pkgFiles": null,
