@@ -1,0 +1,26 @@
+libmd5_a-md5.o: \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/libmd5/md5.c \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/libmd5/md5.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__config \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/features.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/alltypes.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/strings.h
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/libmd5/md5.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__config:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/features.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/alltypes.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/strings.h:

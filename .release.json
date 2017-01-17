@@ -7,20 +7,22 @@
     "commitMessage": "Release %s",
     "tagName": "%s",
     "tagAnnotation": "Release %s",
-    "buildCommand": "npm run dist",
+    "buildCommand": false,
     "changelogCommand": "git log --pretty=format:'* %s (%h)' [REV_RANGE]",
     "requireCleanWorkingDir": false,
     "src": {
         "pushRepo": null,
-        "beforeStartCommand": false,
+        "beforeStartCommand": "npm run dist",
         "beforeStageCommand": false,
         "afterReleaseCommand": false
     },
     "dist": {
         "repo": "git@github.com:ez-tools/_test2#dist",
+        "baseDir": ".",
         "stageDir": ".stage",
+        "files": ["*", "src/pdftex-worker.*", "src/texlive/**"],
         "pkgFiles": null,
-        "beforeStageCommand": "cp -rf ../* .",
+        "beforeStageCommand": "",
         "afterReleaseCommand": ""
     },
     "npm": {

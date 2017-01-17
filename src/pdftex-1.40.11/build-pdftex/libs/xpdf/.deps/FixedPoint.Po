@@ -1,0 +1,7 @@
+FixedPoint.o: \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/goo/FixedPoint.cc \
+  aconf.h aconf2.h
+
+aconf.h:
+
+aconf2.h:

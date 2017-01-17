@@ -1,0 +1,11 @@
+PDFDocEncoding.o: \
+ /home/dmonad/git/_test2/src/binary/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/PDFDocEncoding.cc \
+ /usr/include/stdc-predef.h \
+ /home/dmonad/git/_test2/src/binary/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/PDFDocEncoding.h \
+ /home/dmonad/git/_test2/src/binary/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/CharTypes.h
+
+/usr/include/stdc-predef.h:
+
+/home/dmonad/git/_test2/src/binary/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/PDFDocEncoding.h:
+
+/home/dmonad/git/_test2/src/binary/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/CharTypes.h:

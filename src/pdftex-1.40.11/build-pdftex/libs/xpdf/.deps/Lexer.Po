@@ -1,0 +1,98 @@
+Lexer.o: \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Lexer.cc \
+  aconf.h aconf2.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stdlib.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__config \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/stdlib.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdlib.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/features.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/alltypes.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/alloca.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stddef.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stddef.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__nullptr \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/strings.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/ctype.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/ctype.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/ctype.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Lexer.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Object.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stdio.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdio.h \
+  goo/gtypes.h goo/gmem.h goo/GString.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/stdarg.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdarg.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Array.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Dict.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Stream.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Error.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/config.h
+
+aconf.h:
+
+aconf2.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stdlib.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__config:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/stdlib.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdlib.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/features.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/alltypes.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/alloca.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stddef.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stddef.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__nullptr:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/strings.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/ctype.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/ctype.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/ctype.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Lexer.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Object.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stdio.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdio.h:
+
+goo/gtypes.h:
+
+goo/gmem.h:
+
+goo/GString.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/stdarg.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdarg.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Array.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Dict.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Stream.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Error.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/config.h:

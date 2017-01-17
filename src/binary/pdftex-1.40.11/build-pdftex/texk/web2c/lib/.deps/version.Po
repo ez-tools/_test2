@@ -1,0 +1,7 @@
+version.o: \
+ /home/dmonad/git/_test2/src/binary/pdftex-1.40.11/src/texk/web2c/lib/version.c \
+ /usr/include/stdc-predef.h ../w2c/c-auto.h
+
+/usr/include/stdc-predef.h:
+
+../w2c/c-auto.h:

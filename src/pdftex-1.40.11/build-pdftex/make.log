@@ -1,0 +1,1148 @@
+make[1]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex'
+Making all in .
+make[2]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex'
+=== configuring in texk/kpathsea (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea)
+make: running /bin/bash '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/configure'  '--disable-option-checking' '--prefix=/usr/local' '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' '--cache-file=../../config.cache' '--srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea' --disable-build
+configure: loading cache ../../config.cache
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking build system type... (cached) x86_64-unknown-linux-gnu
+checking host system type... (cached) x86_64-unknown-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... (cached) emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether emcc accepts -g... (cached) yes
+checking for emcc option to accept ISO C89... (cached) none needed
+checking dependency style of emcc... (cached) gcc3
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by emcc... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emcc
+checking if the linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) /home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm
+checking the name lister (/home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /home/dmonad/utils/emsdk_portable/emscripten/master/emcc option to reload object files... (cached) -r
+checking for objdump... (cached) objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for ar... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emar
+checking for strip... (cached) strip
+checking for ranlib... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emranlib
+checking command to parse /home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm output from emcc object... (cached) ok
+checking how to run the C preprocessor... (cached) emcc -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for objdir... (cached) .libs
+checking if emcc supports -fno-rtti -fno-exceptions... (cached) yes
+checking for emcc option to produce PIC... -fPIC -DPIC
+checking if emcc PIC flag -fPIC -DPIC works... (cached) yes
+checking if emcc static flag -static works... (cached) yes
+checking if emcc supports -c -o file.o... (cached) yes
+checking if emcc supports -c -o file.o... (cached) yes
+checking whether the emcc linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for _LARGEFILE_SOURCE value needed for large files... (cached) no
+checking for dirent.h that defines DIR... (cached) yes
+checking for library containing opendir... (cached) none required
+checking for ANSI C header files... (cached) yes
+checking whether closedir returns void... (cached) no
+checking for assert.h... (cached) yes
+checking for float.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for pwd.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for putenv... (cached) yes
+checking for strcasecmp... (cached) yes
+checking for strtol... (cached) yes
+checking for strstr... (cached) yes
+checking for bcmp... (cached) yes
+checking for bcopy... (cached) yes
+checking for bzero... (cached) yes
+checking for getcwd... (cached) yes
+checking for getwd... (cached) yes
+checking for index... (cached) yes
+checking for memcmp... (cached) yes
+checking for memcpy... (cached) yes
+checking for mkstemp... (cached) yes
+checking for mktemp... (cached) yes
+checking for rindex... (cached) yes
+checking for strchr... (cached) yes
+checking for strrchr... (cached) yes
+checking for an ANSI C-conforming const... (cached) yes
+checking for inline... (cached) inline
+checking for size_t... (cached) yes
+checking for struct stat.st_mtim... (cached) yes
+checking whether the compiler accepts prototypes... (cached) yes
+checking whether program_invocation_name is predefined... (cached) yes
+checking what warning flags to pass to the C compiler... (cached) -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas
+checking whether putenv is declared... yes
+checking whether strstr is declared... yes
+checking for putenv... (cached) yes
+checking for strcasecmp... (cached) yes
+checking for strtol... (cached) yes
+checking for strstr... (cached) yes
+checking whether getcwd uses fork or vfork... no
+checking for native WIN32 or MINGW32... (cached) no
+configure: updating cache ../../config.cache
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating man/Makefile
+config.status: creating c-auto.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make[2]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex'
+Making all in libs
+make[2]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/libs'
+Making all in .
+make[3]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/libs'
+=== configuring in zlib (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/libs/zlib)
+make: running /bin/bash '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/configure'  '--disable-option-checking' '--prefix=/usr/local' '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' '--cache-file=../../config.cache' '--srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib' --disable-build
+configure: loading cache ../../config.cache
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... (cached) emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether emcc accepts -g... (cached) yes
+checking for emcc option to accept ISO C89... (cached) none needed
+checking for style of include used by make... GNU
+checking dependency style of emcc... (cached) gcc3
+checking for ranlib... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emranlib
+checking whether ln -s works... yes
+checking how to run the C preprocessor... (cached) emcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking for mmap support... yes
+configure: updating cache ../../config.cache
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing zconf.h commands
+=== configuring in libpng (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/libs/libpng)
+make: running /bin/bash '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/libpng/configure'  '--disable-option-checking' '--prefix=/usr/local' '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' '--cache-file=../../config.cache' '--srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/libpng' --disable-build
+configure: loading cache ../../config.cache
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... (cached) emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether emcc accepts -g... (cached) yes
+checking for emcc option to accept ISO C89... (cached) none needed
+checking for style of include used by make... GNU
+checking dependency style of emcc... (cached) gcc3
+checking for ranlib... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emranlib
+checking whether ln -s works... yes
+checking what warning flags to pass to the C compiler... (cached) -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas
+checking how to run the C preprocessor... (cached) emcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for an ANSI C-conforming const... (cached) yes
+checking for size_t... (cached) yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for working strtod... yes
+checking for memset... yes
+checking for library containing pow... -lm
+configure: updating cache ../../config.cache
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating include/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+=== configuring in obsdcompat (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/libs/obsdcompat)
+make: running /bin/bash '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/obsdcompat/configure'  '--disable-option-checking' '--prefix=/usr/local' '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' '--cache-file=../../config.cache' '--srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/obsdcompat' --disable-build
+configure: loading cache ../../config.cache
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... (cached) emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether emcc accepts -g... (cached) yes
+checking for emcc option to accept ISO C89... (cached) none needed
+checking for style of include used by make... GNU
+checking dependency style of emcc... (cached) gcc3
+checking build system type... (cached) x86_64-unknown-linux-gnu
+checking host system type... (cached) x86_64-unknown-linux-gnu
+checking how to run the C preprocessor... (cached) emcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking whether byte ordering is bigendian... no
+checking for gawk... (cached) gawk
+checking for ranlib... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emranlib
+checking for egrep... (cached) /bin/grep -E
+checking for ar... /home/dmonad/utils/emsdk_portable/emscripten/master/emar
+checking for cat... /bin/cat
+checking for sed... (cached) /bin/sed
+checking for bash... /bin/bash
+checking for ksh... (cached) /bin/bash
+checking for sh... (cached) /bin/bash
+checking for sh... /bin/sh
+checking for inline... (cached) inline
+checking whether LLONG_MAX is declared... yes
+checking compiler and flags for sanity... yes
+checking endian.h usability... yes
+checking endian.h presence... yes
+checking for endian.h... yes
+checking features.h usability... yes
+checking features.h presence... yes
+checking for features.h... yes
+checking floatingpoint.h usability... no
+checking floatingpoint.h presence... no
+checking for floatingpoint.h... no
+checking for limits.h... (cached) yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdint.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/stropts.h usability... yes
+checking sys/stropts.h presence... yes
+checking for sys/stropts.h... yes
+checking sys/strtio.h usability... no
+checking sys/strtio.h presence... no
+checking for sys/strtio.h... no
+checking sys/sysmacros.h usability... yes
+checking sys/sysmacros.h presence... yes
+checking for sys/sysmacros.h... yes
+checking util.h usability... no
+checking util.h presence... no
+checking for util.h... no
+checking for strftime... yes
+checking for asprintf... yes
+checking for bcopy... (cached) yes
+checking for snprintf... yes
+checking for strdup... yes
+checking for strerror... yes
+checking for strlcat... no
+checking for strlcpy... no
+checking for strtonum... no
+checking for strtoll... yes
+checking for strtoul... yes
+checking for sysconf... yes
+checking for vasprintf... yes
+checking for vsnprintf... yes
+checking whether getrusage is declared... no
+checking whether strsep is declared... yes
+checking for strsep... yes
+checking whether snprintf correctly terminates long strings... yes
+checking whether snprintf can declare const char *fmt... yes
+checking for long long... yes
+checking for unsigned long long... yes
+checking for long double... yes
+checking size of char... 1
+checking size of short int... 2
+checking size of int... 4
+checking size of long int... 8
+checking size of long long int... 8
+checking for u_int type... yes
+checking for intXX_t types... yes
+checking for int64_t type... yes
+checking for u_intXX_t types... yes
+checking for u_int64_t types... yes
+checking for uintXX_t types in stdint.h... yes
+checking for u_char... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking if libc defines __progname... yes
+checking whether emcc implements __FUNCTION__... yes
+checking whether emcc implements __func__... yes
+checking whether va_copy exists... yes
+checking whether __va_copy exists... yes
+checking whether getopt has optreset support... no
+configure: updating cache ../../config.cache
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating obsdcompat/config.h
+config.status: executing depfiles commands
+OpenBSD-Compat has been configured with the following options:
+
+              Host: x86_64-unknown-linux-gnu
+          Compiler: emcc
+    Compiler flags: -DELIDE_CODE -Wall -Wpointer-arith -Wuninitialized 
+Preprocessor flags: 
+      Linker flags: 
+         Libraries: 
+
+=== configuring in xpdf (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/libs/xpdf)
+make: running /bin/bash '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/configure'  '--disable-option-checking' '--prefix=/usr/local' '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' '--cache-file=../../config.cache' '--srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf' --disable-build
+configure: loading cache ../../config.cache
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for gcc... (cached) emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether emcc accepts -g... (cached) yes
+checking for emcc option to accept ISO C89... (cached) none needed
+checking for style of include used by make... GNU
+checking dependency style of emcc... (cached) gcc3
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether /home/dmonad/utils/emsdk_portable/emscripten/master/em++ accepts -g... (cached) yes
+checking dependency style of /home/dmonad/utils/emsdk_portable/emscripten/master/em++... (cached) gcc3
+checking for ranlib... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emranlib
+checking whether ln -s works... yes
+checking how to run the C preprocessor... (cached) emcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for dirent.h that defines DIR... (cached) yes
+checking for library containing opendir... (cached) none required
+checking for popen... yes
+checking for mkstemp... (cached) yes
+checking for mkstemps... yes
+checking for _LARGEFILE_SOURCE value needed for large files... (cached) no
+configure: updating cache ../../config.cache
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating xpdf/Makefile
+config.status: creating goo/Makefile
+config.status: creating fofi/Makefile
+config.status: creating aconf.h
+config.status: linking /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/aconf2.h to aconf2.h
+config.status: executing depfiles commands
+make[3]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/libs'
+make[2]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/libs'
+Making all in utils
+make[2]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/utils'
+Making all in .
+make[3]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/utils'
+make[3]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/utils'
+make[2]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/utils'
+Making all in texk
+make[2]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk'
+Making all in .
+make[3]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk'
+=== configuring in web2c (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c)
+make: running /bin/bash '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/configure'  '--disable-option-checking' '--prefix=/usr/local' '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' '--cache-file=../../config.cache' '--srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c' --disable-build
+configure: loading cache ../../config.cache
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking build system type... (cached) x86_64-unknown-linux-gnu
+checking host system type... (cached) x86_64-unknown-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... (cached) emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether emcc accepts -g... (cached) yes
+checking for emcc option to accept ISO C89... (cached) none needed
+checking dependency style of emcc... (cached) gcc3
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by emcc... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emcc
+checking if the linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) /home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm
+checking the name lister (/home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /home/dmonad/utils/emsdk_portable/emscripten/master/emcc option to reload object files... (cached) -r
+checking for objdump... (cached) objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for ar... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emar
+checking for strip... (cached) strip
+checking for ranlib... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emranlib
+checking command to parse /home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm output from emcc object... (cached) ok
+checking how to run the C preprocessor... (cached) emcc -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for objdir... (cached) .libs
+checking if emcc supports -fno-rtti -fno-exceptions... (cached) yes
+checking for emcc option to produce PIC... -fPIC -DPIC
+checking if emcc PIC flag -fPIC -DPIC works... (cached) yes
+checking if emcc static flag -static works... (cached) yes
+checking if emcc supports -c -o file.o... (cached) yes
+checking if emcc supports -c -o file.o... (cached) yes
+checking whether the emcc linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for _LARGEFILE_SOURCE value needed for large files... (cached) no
+checking for dirent.h that defines DIR... (cached) yes
+checking for library containing opendir... (cached) none required
+checking for ANSI C header files... (cached) yes
+checking whether closedir returns void... (cached) no
+checking for assert.h... (cached) yes
+checking for float.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for pwd.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for putenv... (cached) yes
+checking for strcasecmp... (cached) yes
+checking for strtol... (cached) yes
+checking for strstr... (cached) yes
+checking for bcmp... (cached) yes
+checking for bcopy... (cached) yes
+checking for bzero... (cached) yes
+checking for getcwd... (cached) yes
+checking for getwd... (cached) yes
+checking for index... (cached) yes
+checking for memcmp... (cached) yes
+checking for memcpy... (cached) yes
+checking for mkstemp... (cached) yes
+checking for mktemp... (cached) yes
+checking for rindex... (cached) yes
+checking for strchr... (cached) yes
+checking for strrchr... (cached) yes
+checking for an ANSI C-conforming const... (cached) yes
+checking for inline... (cached) inline
+checking for size_t... (cached) yes
+checking for struct stat.st_mtim... (cached) yes
+checking whether the compiler accepts prototypes... (cached) yes
+checking whether program_invocation_name is predefined... (cached) yes
+checking what warning flags to pass to the C compiler... (cached) -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether /home/dmonad/utils/emsdk_portable/emscripten/master/em++ accepts -g... (cached) yes
+checking dependency style of /home/dmonad/utils/emsdk_portable/emscripten/master/em++... (cached) gcc3
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether /home/dmonad/utils/emsdk_portable/emscripten/master/em++ accepts -g... (cached) yes
+checking dependency style of /home/dmonad/utils/emsdk_portable/emscripten/master/em++... (cached) gcc3
+checking what warning flags to pass to the C++ compiler... (cached) -Wimplicit -Wreturn-type -Wno-unknown-pragmas
+checking how to run the C++ preprocessor... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/em++ -E
+checking for ld used by /home/dmonad/utils/emsdk_portable/emscripten/master/em++... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64
+checking if the linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64) is GNU ld... (cached) no
+checking whether the /home/dmonad/utils/emsdk_portable/emscripten/master/em++ linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64) supports shared libraries... yes
+checking for /home/dmonad/utils/emsdk_portable/emscripten/master/em++ option to produce PIC... -fPIC -DPIC
+checking if /home/dmonad/utils/emsdk_portable/emscripten/master/em++ PIC flag -fPIC -DPIC works... (cached) yes
+checking if /home/dmonad/utils/emsdk_portable/emscripten/master/em++ static flag -static works... (cached) yes
+checking if /home/dmonad/utils/emsdk_portable/emscripten/master/em++ supports -c -o file.o... (cached) yes
+checking if /home/dmonad/utils/emsdk_portable/emscripten/master/em++ supports -c -o file.o... (cached) yes
+checking whether the /home/dmonad/utils/emsdk_portable/emscripten/master/em++ linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... unsupported
+checking for g++... g++
+checking whether we are using the GNU Objective C++ compiler... no
+checking whether g++ accepts -g... no
+checking what warning flags to pass to the Objective C++ compiler... 
+checking iostream usability... no
+checking iostream presence... yes
+checking for iostream... no
+checking for statically linking C++ runtime library... not supported
+checking for kpsewhich... kpsewhich
+checking whether gcc asm needs underscore... no
+checking for native WIN32 or MINGW32... (cached) no
+checking for library containing connect... none required
+checking for library containing gethostbyname... none required
+checking for library containing inet_aton... none required
+checking for library containing nanosleep... none required
+checking for library containing dlopen... -ldl
+checking for dlfcn.h... (cached) yes
+checking for Mac OS X Carbon framework... no
+checking for pkg-config... (cached) pkg-config
+checking for installed fontconfig headers and library... no
+checking for X... disabled
+checking for bison... no
+checking for byacc... no
+checking for flex... no
+checking for lex... no
+checking size of int... (cached) 4
+checking size of long... 8
+checking for library containing pow... (cached) -lm
+checking for access... yes
+checking for atoi... yes
+checking for fmax... yes
+checking for ftime... yes
+checking for gettimeofday... yes
+checking for mkdtemp... yes
+checking for setlocale... yes
+checking for snprintf... (cached) yes
+checking for strerror... (cached) yes
+checking for strlcat... (cached) no
+checking for strlcpy... (cached) no
+checking for errno.h... (cached) yes
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/timeb.h usability... yes
+checking sys/timeb.h presence... yes
+checking for sys/timeb.h... yes
+checking sys/wait.h usability... yes
+checking sys/wait.h presence... yes
+checking for sys/wait.h... yes
+checking for time.h... (cached) yes
+checking for long double... (cached) yes
+checking for long long int... yes
+checking whether byte ordering is bigendian... (cached) no
+checking return type of signal handlers... void
+configure: creating ./config.lt
+config.lt: creating libtool
+checking if libkpathsea supports debugging... no
+checking for freetype-config... no
+checking for PDFDoc::getPDFMajorVersion... no
+configure: updating cache ../../config.cache
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating man/Makefile
+config.status: creating omegafonts/Makefile
+config.status: creating otps/Makefile
+config.status: creating window/Makefile
+config.status: creating web2c-sh
+config.status: creating tangle-sh
+config.status: creating ctangleboot-sh
+config.status: creating w2c/c-auto.h
+config.status: creating ff-config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+=== configuring in web2c (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c/web2c)
+configure: running /bin/bash /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/configure --disable-option-checking '--prefix=/usr/local'  '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' '--disable-build' --cache-file=../../../config.cache --srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c
+configure: loading cache ../../../config.cache
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking build system type... (cached) x86_64-unknown-linux-gnu
+checking host system type... (cached) x86_64-unknown-linux-gnu
+checking for style of include used by make... GNU
+checking for gcc... (cached) emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether emcc accepts -g... (cached) yes
+checking for emcc option to accept ISO C89... (cached) none needed
+checking dependency style of emcc... (cached) gcc3
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by emcc... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emcc
+checking if the linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) /home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm
+checking the name lister (/home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /home/dmonad/utils/emsdk_portable/emscripten/master/emcc option to reload object files... (cached) -r
+checking for objdump... (cached) objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for ar... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emar
+checking for strip... (cached) strip
+checking for ranlib... (cached) /home/dmonad/utils/emsdk_portable/emscripten/master/emranlib
+checking command to parse /home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm output from emcc object... (cached) ok
+checking how to run the C preprocessor... (cached) emcc -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for objdir... (cached) .libs
+checking if emcc supports -fno-rtti -fno-exceptions... (cached) yes
+checking for emcc option to produce PIC... -fPIC -DPIC
+checking if emcc PIC flag -fPIC -DPIC works... (cached) yes
+checking if emcc static flag -static works... (cached) yes
+checking if emcc supports -c -o file.o... (cached) yes
+checking if emcc supports -c -o file.o... (cached) yes
+checking whether the emcc linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for _LARGEFILE_SOURCE value needed for large files... (cached) no
+checking for dirent.h that defines DIR... (cached) yes
+checking for library containing opendir... (cached) none required
+checking for ANSI C header files... (cached) yes
+checking whether closedir returns void... (cached) no
+checking for assert.h... (cached) yes
+checking for float.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for pwd.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for putenv... (cached) yes
+checking for strcasecmp... (cached) yes
+checking for strtol... (cached) yes
+checking for strstr... (cached) yes
+checking for bcmp... (cached) yes
+checking for bcopy... (cached) yes
+checking for bzero... (cached) yes
+checking for getcwd... (cached) yes
+checking for getwd... (cached) yes
+checking for index... (cached) yes
+checking for memcmp... (cached) yes
+checking for memcpy... (cached) yes
+checking for mkstemp... (cached) yes
+checking for mktemp... (cached) yes
+checking for rindex... (cached) yes
+checking for strchr... (cached) yes
+checking for strrchr... (cached) yes
+checking for an ANSI C-conforming const... (cached) yes
+checking for inline... (cached) inline
+checking for size_t... (cached) yes
+checking for struct stat.st_mtim... (cached) yes
+checking whether the compiler accepts prototypes... (cached) yes
+checking whether program_invocation_name is predefined... (cached) yes
+checking what warning flags to pass to the C compiler... (cached) -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas
+checking for bison... no
+checking for byacc... no
+checking for flex... no
+checking for lex... no
+checking size of int... (cached) 4
+checking for strerror... (cached) yes
+checking for errno.h... (cached) yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating kpathsea/c-auto.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make[3]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk'
+make[2]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk'
+make[1]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex'
++ cd /home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c
++ make pdftex
+make[1]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c'
+cp -f /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/tangleboot.pin tangleboot.p
+cd web2c && make  stamp-fixwrites
+make[2]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c/web2c'
+/bin/mkdir -p w2c
+sed -e '/c-auto\.h>/d' /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/../w2c/config.h >w2c/config.h
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c -I./kpathsea -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/../..   -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT fixwrites.o -MD -MP -MF .deps/fixwrites.Tpo -c -o fixwrites.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/fixwrites.c
+mv -f .deps/fixwrites.Tpo .deps/fixwrites.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c -I./kpathsea -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/../..   -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT kps.o -MD -MP -MF .deps/kps.Tpo -c -o kps.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/kps.c
+mv -f .deps/kps.Tpo .deps/kps.Po
+/bin/bash ./libtool --tag=CC   --mode=link emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE   -o fixwrites fixwrites.o kps.o  
+libtool: link: emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -o fixwrites fixwrites.o kps.o 
+clang-3.9: warning: argument unused during compilation: '-nostdinc'
+echo timestamp >stamp-fixwrites
+make[2]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c/web2c'
+touch web2c/stamp-fixwrites
+cd web2c && make  stamp-splitup
+make[2]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c/web2c'
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c -I./kpathsea -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/../..   -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT splitup.o -MD -MP -MF .deps/splitup.Tpo -c -o splitup.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/splitup.c
+mv -f .deps/splitup.Tpo .deps/splitup.Po
+/bin/bash ./libtool --tag=CC   --mode=link emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE   -o splitup kps.o splitup.o  
+libtool: link: emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -o splitup kps.o splitup.o 
+clang-3.9: warning: argument unused during compilation: '-nostdinc'
+echo timestamp >stamp-splitup
+make[2]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c/web2c'
+touch web2c/stamp-splitup
+cd web2c && make  stamp-web2c
+make[2]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c/web2c'
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c -I./kpathsea -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/../..   -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT web2c-parser.o -MD -MP -MF .deps/web2c-parser.Tpo -c -o web2c-parser.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/web2c-parser.c
+mv -f .deps/web2c-parser.Tpo .deps/web2c-parser.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c -I./kpathsea -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/../..   -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT web2c-lexer.o -MD -MP -MF .deps/web2c-lexer.Tpo -c -o web2c-lexer.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/web2c-lexer.c
+mv -f .deps/web2c-lexer.Tpo .deps/web2c-lexer.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c -I./kpathsea -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/../..   -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/main.c
+mv -f .deps/main.Tpo .deps/main.Po
+/bin/bash ./libtool --tag=CC   --mode=link emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE   -o web2c web2c-parser.o web2c-lexer.o kps.o main.o  
+libtool: link: emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -o web2c web2c-parser.o web2c-lexer.o kps.o main.o 
+clang-3.9: warning: argument unused during compilation: '-nostdinc'
+echo timestamp >stamp-web2c
+make[2]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c/web2c'
+touch web2c/stamp-web2c
+/bin/bash /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/web2c/convert tangleboot
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I./w2c  -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT tangleboot.o -MD -MP -MF .deps/tangleboot.Tpo -c -o tangleboot.o tangleboot.c
+mv -f .deps/tangleboot.Tpo .deps/tangleboot.Po
+cd lib && make  lib.a
+make[2]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c/lib'
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT basechsuffix.o -MD -MP -MF .deps/basechsuffix.Tpo -c -o basechsuffix.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/basechsuffix.c
+mv -f .deps/basechsuffix.Tpo .deps/basechsuffix.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT chartostring.o -MD -MP -MF .deps/chartostring.Tpo -c -o chartostring.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/chartostring.c
+mv -f .deps/chartostring.Tpo .deps/chartostring.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT coredump.o -MD -MP -MF .deps/coredump.Tpo -c -o coredump.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/coredump.c
+mv -f .deps/coredump.Tpo .deps/coredump.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT eofeoln.o -MD -MP -MF .deps/eofeoln.Tpo -c -o eofeoln.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/eofeoln.c
+mv -f .deps/eofeoln.Tpo .deps/eofeoln.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT fprintreal.o -MD -MP -MF .deps/fprintreal.Tpo -c -o fprintreal.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/fprintreal.c
+mv -f .deps/fprintreal.Tpo .deps/fprintreal.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT inputint.o -MD -MP -MF .deps/inputint.Tpo -c -o inputint.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/inputint.c
+mv -f .deps/inputint.Tpo .deps/inputint.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT input2int.o -MD -MP -MF .deps/input2int.Tpo -c -o input2int.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/input2int.c
+mv -f .deps/input2int.Tpo .deps/input2int.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/main.c
+mv -f .deps/main.Tpo .deps/main.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT openclose.o -MD -MP -MF .deps/openclose.Tpo -c -o openclose.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/openclose.c
+mv -f .deps/openclose.Tpo .deps/openclose.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT printversion.o -MD -MP -MF .deps/printversion.Tpo -c -o printversion.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/printversion.c
+mv -f .deps/printversion.Tpo .deps/printversion.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT setupvar.o -MD -MP -MF .deps/setupvar.Tpo -c -o setupvar.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/setupvar.c
+mv -f .deps/setupvar.Tpo .deps/setupvar.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT uexit.o -MD -MP -MF .deps/uexit.Tpo -c -o uexit.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/uexit.c
+mv -f .deps/uexit.Tpo .deps/uexit.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT usage.o -MD -MP -MF .deps/usage.Tpo -c -o usage.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/usage.c
+mv -f .deps/usage.Tpo .deps/usage.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT version.o -MD -MP -MF .deps/version.Tpo -c -o version.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/version.c
+mv -f .deps/version.Tpo .deps/version.Po
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib -I../w2c -I.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c -I/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk -DNO_DEBUG  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT zround.o -MD -MP -MF .deps/zround.Tpo -c -o zround.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/lib/zround.c
+mv -f .deps/zround.Tpo .deps/zround.Po
+rm -f lib.a
+/home/dmonad/utils/emsdk_portable/emscripten/master/emar cru lib.a basechsuffix.o chartostring.o coredump.o eofeoln.o fprintreal.o inputint.o input2int.o main.o openclose.o printversion.o setupvar.o uexit.o usage.o version.o zround.o 
+/home/dmonad/utils/emsdk_portable/emscripten/master/emranlib lib.a
+make[2]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c/lib'
+cd ./../kpathsea && make  rebuild
+make[2]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+echo "/* paths.h: Generated from texmf.cnf. */" >paths.tmp
+awk -f /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/bsnl.awk /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/texmf.cnf \
+| sed -e 's/%.*//' -e 's/^[ 	]*//' -e 's/[ 	]*$//' \
+| grep '^[ 	]*[A-Z0-9_]*[ 	=]' \
+| sed '/^$/d' \
+| sed 's/^\([^ 	=]*\)[ 	]*=*[ 	]*\(.*\)/#ifndef DEFAULT_\1%#define DEFAULT_\1 "\2"%#endif/' \
+| tr '%' '\012' \
+| sed -e 's%\$TEXMFCONFIG%/nonesuch/texmfconfig%g' \
+      -e 's%\$TEXMFDIST%/nonesuch/texmfdist%g' \
+      -e 's%\$TEXMFDOCDIR%/nonesuch/texmfdocdir%g' \
+      -e 's%\$TEXMFLOCAL%/nonesuch/texmflocal%g' \
+      -e 's%\$TEXMFMAIN%/nonesuch/texmfmain%g' \
+      -e 's%\$TEXMFSYSCONFIG%/nonesuch/texmfsysconfig%g' \
+      -e 's%\$TEXMFSYSVAR%/nonesuch/texmfsysvar%g' \
+      -e 's%\$TEXMFVAR%/nonesuch/texmfvar%g' \
+      -e 's%\$TEXMF%/nonesuch/texmf%g' \
+      -e 's%\$VARTEXFONTS%/nonesuch/vartexfonts%g' \
+| sed -e 's%;%:%g' \
+>>paths.tmp
+cp paths.tmp paths.h
+rm -f paths.tmp
+date >stamp-paths
+make  all-recursive
+make[3]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+Making all in .
+make[4]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+rm -f kpathsea.h
+echo '/* This is a generated file */' >kpathsea.h
+echo '/* collecting all kpathsea headers. */' >>kpathsea.h
+echo '#include <kpathsea/config.h>' >>kpathsea.h
+echo '#include <kpathsea/c-auto.h>' >>kpathsea.h
+echo '#include <kpathsea/paths.h>' >>kpathsea.h
+(cd /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea && ls -1 *.h) \
+| sed -e '/^config\.h/d' \
+      -e '/^paths\.h/d' \
+      -e '/^kpathsea\.h/d' \
+      -e '/^mingw32\.h/d' \
+      -e '/^win32lib\.h/d' \
+      -e 's,^,#include <kpathsea/,' -e s',$,>,' >>kpathsea.h
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-tex-file.lo -MD -MP -MF .deps/libkpathsea_la-tex-file.Tpo -c -o libkpathsea_la-tex-file.lo `test -f 'tex-file.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`tex-file.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-tex-file.lo -MD -MP -MF .deps/libkpathsea_la-tex-file.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/tex-file.c -o libkpathsea_la-tex-file.o
+mv -f .deps/libkpathsea_la-tex-file.Tpo .deps/libkpathsea_la-tex-file.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-absolute.lo -MD -MP -MF .deps/libkpathsea_la-absolute.Tpo -c -o libkpathsea_la-absolute.lo `test -f 'absolute.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`absolute.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-absolute.lo -MD -MP -MF .deps/libkpathsea_la-absolute.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/absolute.c -o libkpathsea_la-absolute.o
+mv -f .deps/libkpathsea_la-absolute.Tpo .deps/libkpathsea_la-absolute.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-atou.lo -MD -MP -MF .deps/libkpathsea_la-atou.Tpo -c -o libkpathsea_la-atou.lo `test -f 'atou.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`atou.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-atou.lo -MD -MP -MF .deps/libkpathsea_la-atou.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/atou.c -o libkpathsea_la-atou.o
+mv -f .deps/libkpathsea_la-atou.Tpo .deps/libkpathsea_la-atou.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-cnf.lo -MD -MP -MF .deps/libkpathsea_la-cnf.Tpo -c -o libkpathsea_la-cnf.lo `test -f 'cnf.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`cnf.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-cnf.lo -MD -MP -MF .deps/libkpathsea_la-cnf.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/cnf.c -o libkpathsea_la-cnf.o
+mv -f .deps/libkpathsea_la-cnf.Tpo .deps/libkpathsea_la-cnf.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-concat.lo -MD -MP -MF .deps/libkpathsea_la-concat.Tpo -c -o libkpathsea_la-concat.lo `test -f 'concat.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`concat.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-concat.lo -MD -MP -MF .deps/libkpathsea_la-concat.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/concat.c -o libkpathsea_la-concat.o
+mv -f .deps/libkpathsea_la-concat.Tpo .deps/libkpathsea_la-concat.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-concat3.lo -MD -MP -MF .deps/libkpathsea_la-concat3.Tpo -c -o libkpathsea_la-concat3.lo `test -f 'concat3.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`concat3.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-concat3.lo -MD -MP -MF .deps/libkpathsea_la-concat3.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/concat3.c -o libkpathsea_la-concat3.o
+mv -f .deps/libkpathsea_la-concat3.Tpo .deps/libkpathsea_la-concat3.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-concatn.lo -MD -MP -MF .deps/libkpathsea_la-concatn.Tpo -c -o libkpathsea_la-concatn.lo `test -f 'concatn.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`concatn.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-concatn.lo -MD -MP -MF .deps/libkpathsea_la-concatn.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/concatn.c -o libkpathsea_la-concatn.o
+mv -f .deps/libkpathsea_la-concatn.Tpo .deps/libkpathsea_la-concatn.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-db.lo -MD -MP -MF .deps/libkpathsea_la-db.Tpo -c -o libkpathsea_la-db.lo `test -f 'db.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`db.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-db.lo -MD -MP -MF .deps/libkpathsea_la-db.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/db.c -o libkpathsea_la-db.o
+mv -f .deps/libkpathsea_la-db.Tpo .deps/libkpathsea_la-db.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-debug.lo -MD -MP -MF .deps/libkpathsea_la-debug.Tpo -c -o libkpathsea_la-debug.lo `test -f 'debug.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`debug.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-debug.lo -MD -MP -MF .deps/libkpathsea_la-debug.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/debug.c -o libkpathsea_la-debug.o
+mv -f .deps/libkpathsea_la-debug.Tpo .deps/libkpathsea_la-debug.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-dir.lo -MD -MP -MF .deps/libkpathsea_la-dir.Tpo -c -o libkpathsea_la-dir.lo `test -f 'dir.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`dir.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-dir.lo -MD -MP -MF .deps/libkpathsea_la-dir.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/dir.c -o libkpathsea_la-dir.o
+mv -f .deps/libkpathsea_la-dir.Tpo .deps/libkpathsea_la-dir.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-elt-dirs.lo -MD -MP -MF .deps/libkpathsea_la-elt-dirs.Tpo -c -o libkpathsea_la-elt-dirs.lo `test -f 'elt-dirs.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`elt-dirs.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-elt-dirs.lo -MD -MP -MF .deps/libkpathsea_la-elt-dirs.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/elt-dirs.c -o libkpathsea_la-elt-dirs.o
+mv -f .deps/libkpathsea_la-elt-dirs.Tpo .deps/libkpathsea_la-elt-dirs.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-expand.lo -MD -MP -MF .deps/libkpathsea_la-expand.Tpo -c -o libkpathsea_la-expand.lo `test -f 'expand.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`expand.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-expand.lo -MD -MP -MF .deps/libkpathsea_la-expand.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/expand.c -o libkpathsea_la-expand.o
+mv -f .deps/libkpathsea_la-expand.Tpo .deps/libkpathsea_la-expand.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-extend-fname.lo -MD -MP -MF .deps/libkpathsea_la-extend-fname.Tpo -c -o libkpathsea_la-extend-fname.lo `test -f 'extend-fname.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`extend-fname.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-extend-fname.lo -MD -MP -MF .deps/libkpathsea_la-extend-fname.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/extend-fname.c -o libkpathsea_la-extend-fname.o
+mv -f .deps/libkpathsea_la-extend-fname.Tpo .deps/libkpathsea_la-extend-fname.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-file-p.lo -MD -MP -MF .deps/libkpathsea_la-file-p.Tpo -c -o libkpathsea_la-file-p.lo `test -f 'file-p.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`file-p.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-file-p.lo -MD -MP -MF .deps/libkpathsea_la-file-p.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/file-p.c -o libkpathsea_la-file-p.o
+mv -f .deps/libkpathsea_la-file-p.Tpo .deps/libkpathsea_la-file-p.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-find-suffix.lo -MD -MP -MF .deps/libkpathsea_la-find-suffix.Tpo -c -o libkpathsea_la-find-suffix.lo `test -f 'find-suffix.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`find-suffix.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-find-suffix.lo -MD -MP -MF .deps/libkpathsea_la-find-suffix.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/find-suffix.c -o libkpathsea_la-find-suffix.o
+mv -f .deps/libkpathsea_la-find-suffix.Tpo .deps/libkpathsea_la-find-suffix.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-fn.lo -MD -MP -MF .deps/libkpathsea_la-fn.Tpo -c -o libkpathsea_la-fn.lo `test -f 'fn.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`fn.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-fn.lo -MD -MP -MF .deps/libkpathsea_la-fn.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/fn.c -o libkpathsea_la-fn.o
+mv -f .deps/libkpathsea_la-fn.Tpo .deps/libkpathsea_la-fn.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-fontmap.lo -MD -MP -MF .deps/libkpathsea_la-fontmap.Tpo -c -o libkpathsea_la-fontmap.lo `test -f 'fontmap.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`fontmap.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-fontmap.lo -MD -MP -MF .deps/libkpathsea_la-fontmap.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/fontmap.c -o libkpathsea_la-fontmap.o
+mv -f .deps/libkpathsea_la-fontmap.Tpo .deps/libkpathsea_la-fontmap.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-getopt.lo -MD -MP -MF .deps/libkpathsea_la-getopt.Tpo -c -o libkpathsea_la-getopt.lo `test -f 'getopt.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`getopt.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-getopt.lo -MD -MP -MF .deps/libkpathsea_la-getopt.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/getopt.c -o libkpathsea_la-getopt.o
+mv -f .deps/libkpathsea_la-getopt.Tpo .deps/libkpathsea_la-getopt.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-getopt1.lo -MD -MP -MF .deps/libkpathsea_la-getopt1.Tpo -c -o libkpathsea_la-getopt1.lo `test -f 'getopt1.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`getopt1.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-getopt1.lo -MD -MP -MF .deps/libkpathsea_la-getopt1.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/getopt1.c -o libkpathsea_la-getopt1.o
+mv -f .deps/libkpathsea_la-getopt1.Tpo .deps/libkpathsea_la-getopt1.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-hash.lo -MD -MP -MF .deps/libkpathsea_la-hash.Tpo -c -o libkpathsea_la-hash.lo `test -f 'hash.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`hash.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-hash.lo -MD -MP -MF .deps/libkpathsea_la-hash.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/hash.c -o libkpathsea_la-hash.o
+mv -f .deps/libkpathsea_la-hash.Tpo .deps/libkpathsea_la-hash.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-kdefault.lo -MD -MP -MF .deps/libkpathsea_la-kdefault.Tpo -c -o libkpathsea_la-kdefault.lo `test -f 'kdefault.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`kdefault.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-kdefault.lo -MD -MP -MF .deps/libkpathsea_la-kdefault.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/kdefault.c -o libkpathsea_la-kdefault.o
+mv -f .deps/libkpathsea_la-kdefault.Tpo .deps/libkpathsea_la-kdefault.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-kpathsea.lo -MD -MP -MF .deps/libkpathsea_la-kpathsea.Tpo -c -o libkpathsea_la-kpathsea.lo `test -f 'kpathsea.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`kpathsea.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-kpathsea.lo -MD -MP -MF .deps/libkpathsea_la-kpathsea.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/kpathsea.c -o libkpathsea_la-kpathsea.o
+mv -f .deps/libkpathsea_la-kpathsea.Tpo .deps/libkpathsea_la-kpathsea.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-line.lo -MD -MP -MF .deps/libkpathsea_la-line.Tpo -c -o libkpathsea_la-line.lo `test -f 'line.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`line.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-line.lo -MD -MP -MF .deps/libkpathsea_la-line.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/line.c -o libkpathsea_la-line.o
+mv -f .deps/libkpathsea_la-line.Tpo .deps/libkpathsea_la-line.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-magstep.lo -MD -MP -MF .deps/libkpathsea_la-magstep.Tpo -c -o libkpathsea_la-magstep.lo `test -f 'magstep.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`magstep.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-magstep.lo -MD -MP -MF .deps/libkpathsea_la-magstep.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/magstep.c -o libkpathsea_la-magstep.o
+mv -f .deps/libkpathsea_la-magstep.Tpo .deps/libkpathsea_la-magstep.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-make-suffix.lo -MD -MP -MF .deps/libkpathsea_la-make-suffix.Tpo -c -o libkpathsea_la-make-suffix.lo `test -f 'make-suffix.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`make-suffix.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-make-suffix.lo -MD -MP -MF .deps/libkpathsea_la-make-suffix.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/make-suffix.c -o libkpathsea_la-make-suffix.o
+mv -f .deps/libkpathsea_la-make-suffix.Tpo .deps/libkpathsea_la-make-suffix.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-path-elt.lo -MD -MP -MF .deps/libkpathsea_la-path-elt.Tpo -c -o libkpathsea_la-path-elt.lo `test -f 'path-elt.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`path-elt.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-path-elt.lo -MD -MP -MF .deps/libkpathsea_la-path-elt.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/path-elt.c -o libkpathsea_la-path-elt.o
+mv -f .deps/libkpathsea_la-path-elt.Tpo .deps/libkpathsea_la-path-elt.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-pathsearch.lo -MD -MP -MF .deps/libkpathsea_la-pathsearch.Tpo -c -o libkpathsea_la-pathsearch.lo `test -f 'pathsearch.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`pathsearch.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-pathsearch.lo -MD -MP -MF .deps/libkpathsea_la-pathsearch.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/pathsearch.c -o libkpathsea_la-pathsearch.o
+mv -f .deps/libkpathsea_la-pathsearch.Tpo .deps/libkpathsea_la-pathsearch.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-proginit.lo -MD -MP -MF .deps/libkpathsea_la-proginit.Tpo -c -o libkpathsea_la-proginit.lo `test -f 'proginit.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`proginit.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-proginit.lo -MD -MP -MF .deps/libkpathsea_la-proginit.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/proginit.c -o libkpathsea_la-proginit.o
+mv -f .deps/libkpathsea_la-proginit.Tpo .deps/libkpathsea_la-proginit.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-progname.lo -MD -MP -MF .deps/libkpathsea_la-progname.Tpo -c -o libkpathsea_la-progname.lo `test -f 'progname.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`progname.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-progname.lo -MD -MP -MF .deps/libkpathsea_la-progname.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/progname.c -o libkpathsea_la-progname.o
+mv -f .deps/libkpathsea_la-progname.Tpo .deps/libkpathsea_la-progname.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-readable.lo -MD -MP -MF .deps/libkpathsea_la-readable.Tpo -c -o libkpathsea_la-readable.lo `test -f 'readable.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`readable.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-readable.lo -MD -MP -MF .deps/libkpathsea_la-readable.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/readable.c -o libkpathsea_la-readable.o
+mv -f .deps/libkpathsea_la-readable.Tpo .deps/libkpathsea_la-readable.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-rm-suffix.lo -MD -MP -MF .deps/libkpathsea_la-rm-suffix.Tpo -c -o libkpathsea_la-rm-suffix.lo `test -f 'rm-suffix.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`rm-suffix.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-rm-suffix.lo -MD -MP -MF .deps/libkpathsea_la-rm-suffix.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/rm-suffix.c -o libkpathsea_la-rm-suffix.o
+mv -f .deps/libkpathsea_la-rm-suffix.Tpo .deps/libkpathsea_la-rm-suffix.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-str-list.lo -MD -MP -MF .deps/libkpathsea_la-str-list.Tpo -c -o libkpathsea_la-str-list.lo `test -f 'str-list.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`str-list.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-str-list.lo -MD -MP -MF .deps/libkpathsea_la-str-list.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/str-list.c -o libkpathsea_la-str-list.o
+mv -f .deps/libkpathsea_la-str-list.Tpo .deps/libkpathsea_la-str-list.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-str-llist.lo -MD -MP -MF .deps/libkpathsea_la-str-llist.Tpo -c -o libkpathsea_la-str-llist.lo `test -f 'str-llist.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`str-llist.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-str-llist.lo -MD -MP -MF .deps/libkpathsea_la-str-llist.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/str-llist.c -o libkpathsea_la-str-llist.o
+mv -f .deps/libkpathsea_la-str-llist.Tpo .deps/libkpathsea_la-str-llist.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-tex-glyph.lo -MD -MP -MF .deps/libkpathsea_la-tex-glyph.Tpo -c -o libkpathsea_la-tex-glyph.lo `test -f 'tex-glyph.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`tex-glyph.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-tex-glyph.lo -MD -MP -MF .deps/libkpathsea_la-tex-glyph.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/tex-glyph.c -o libkpathsea_la-tex-glyph.o
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/tex-glyph.c:200:28: warning: taking the absolute value of unsigned type 'unsigned int' has no effect [-Wabsolute-value]
+      unsigned this_diff = abs (kpse->fallback_resolutions[s] - dpi);
+                           ^
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/tex-glyph.c:200:28: note: remove the call to 'abs' since unsigned values cannot be negative
+      unsigned this_diff = abs (kpse->fallback_resolutions[s] - dpi);
+                           ^~~~
+1 warning generated.
+mv -f .deps/libkpathsea_la-tex-glyph.Tpo .deps/libkpathsea_la-tex-glyph.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-tex-hush.lo -MD -MP -MF .deps/libkpathsea_la-tex-hush.Tpo -c -o libkpathsea_la-tex-hush.lo `test -f 'tex-hush.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`tex-hush.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-tex-hush.lo -MD -MP -MF .deps/libkpathsea_la-tex-hush.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/tex-hush.c -o libkpathsea_la-tex-hush.o
+mv -f .deps/libkpathsea_la-tex-hush.Tpo .deps/libkpathsea_la-tex-hush.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-tex-make.lo -MD -MP -MF .deps/libkpathsea_la-tex-make.Tpo -c -o libkpathsea_la-tex-make.lo `test -f 'tex-make.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`tex-make.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-tex-make.lo -MD -MP -MF .deps/libkpathsea_la-tex-make.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/tex-make.c -o libkpathsea_la-tex-make.o
+mv -f .deps/libkpathsea_la-tex-make.Tpo .deps/libkpathsea_la-tex-make.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-tilde.lo -MD -MP -MF .deps/libkpathsea_la-tilde.Tpo -c -o libkpathsea_la-tilde.lo `test -f 'tilde.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`tilde.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-tilde.lo -MD -MP -MF .deps/libkpathsea_la-tilde.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/tilde.c -o libkpathsea_la-tilde.o
+mv -f .deps/libkpathsea_la-tilde.Tpo .deps/libkpathsea_la-tilde.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-truncate.lo -MD -MP -MF .deps/libkpathsea_la-truncate.Tpo -c -o libkpathsea_la-truncate.lo `test -f 'truncate.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`truncate.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-truncate.lo -MD -MP -MF .deps/libkpathsea_la-truncate.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/truncate.c -o libkpathsea_la-truncate.o
+mv -f .deps/libkpathsea_la-truncate.Tpo .deps/libkpathsea_la-truncate.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-uppercasify.lo -MD -MP -MF .deps/libkpathsea_la-uppercasify.Tpo -c -o libkpathsea_la-uppercasify.lo `test -f 'uppercasify.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`uppercasify.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-uppercasify.lo -MD -MP -MF .deps/libkpathsea_la-uppercasify.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/uppercasify.c -o libkpathsea_la-uppercasify.o
+mv -f .deps/libkpathsea_la-uppercasify.Tpo .deps/libkpathsea_la-uppercasify.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-variable.lo -MD -MP -MF .deps/libkpathsea_la-variable.Tpo -c -o libkpathsea_la-variable.lo `test -f 'variable.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`variable.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-variable.lo -MD -MP -MF .deps/libkpathsea_la-variable.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/variable.c -o libkpathsea_la-variable.o
+mv -f .deps/libkpathsea_la-variable.Tpo .deps/libkpathsea_la-variable.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-version.lo -MD -MP -MF .deps/libkpathsea_la-version.Tpo -c -o libkpathsea_la-version.lo `test -f 'version.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`version.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-version.lo -MD -MP -MF .deps/libkpathsea_la-version.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/version.c -o libkpathsea_la-version.o
+mv -f .deps/libkpathsea_la-version.Tpo .deps/libkpathsea_la-version.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xbasename.lo -MD -MP -MF .deps/libkpathsea_la-xbasename.Tpo -c -o libkpathsea_la-xbasename.lo `test -f 'xbasename.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xbasename.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xbasename.lo -MD -MP -MF .deps/libkpathsea_la-xbasename.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xbasename.c -o libkpathsea_la-xbasename.o
+mv -f .deps/libkpathsea_la-xbasename.Tpo .deps/libkpathsea_la-xbasename.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xcalloc.lo -MD -MP -MF .deps/libkpathsea_la-xcalloc.Tpo -c -o libkpathsea_la-xcalloc.lo `test -f 'xcalloc.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xcalloc.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xcalloc.lo -MD -MP -MF .deps/libkpathsea_la-xcalloc.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xcalloc.c -o libkpathsea_la-xcalloc.o
+mv -f .deps/libkpathsea_la-xcalloc.Tpo .deps/libkpathsea_la-xcalloc.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xdirname.lo -MD -MP -MF .deps/libkpathsea_la-xdirname.Tpo -c -o libkpathsea_la-xdirname.lo `test -f 'xdirname.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xdirname.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xdirname.lo -MD -MP -MF .deps/libkpathsea_la-xdirname.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xdirname.c -o libkpathsea_la-xdirname.o
+mv -f .deps/libkpathsea_la-xdirname.Tpo .deps/libkpathsea_la-xdirname.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xfopen.lo -MD -MP -MF .deps/libkpathsea_la-xfopen.Tpo -c -o libkpathsea_la-xfopen.lo `test -f 'xfopen.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xfopen.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xfopen.lo -MD -MP -MF .deps/libkpathsea_la-xfopen.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xfopen.c -o libkpathsea_la-xfopen.o
+mv -f .deps/libkpathsea_la-xfopen.Tpo .deps/libkpathsea_la-xfopen.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xfseek.lo -MD -MP -MF .deps/libkpathsea_la-xfseek.Tpo -c -o libkpathsea_la-xfseek.lo `test -f 'xfseek.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xfseek.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xfseek.lo -MD -MP -MF .deps/libkpathsea_la-xfseek.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xfseek.c -o libkpathsea_la-xfseek.o
+mv -f .deps/libkpathsea_la-xfseek.Tpo .deps/libkpathsea_la-xfseek.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xfseeko.lo -MD -MP -MF .deps/libkpathsea_la-xfseeko.Tpo -c -o libkpathsea_la-xfseeko.lo `test -f 'xfseeko.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xfseeko.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xfseeko.lo -MD -MP -MF .deps/libkpathsea_la-xfseeko.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xfseeko.c -o libkpathsea_la-xfseeko.o
+mv -f .deps/libkpathsea_la-xfseeko.Tpo .deps/libkpathsea_la-xfseeko.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xftell.lo -MD -MP -MF .deps/libkpathsea_la-xftell.Tpo -c -o libkpathsea_la-xftell.lo `test -f 'xftell.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xftell.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xftell.lo -MD -MP -MF .deps/libkpathsea_la-xftell.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xftell.c -o libkpathsea_la-xftell.o
+mv -f .deps/libkpathsea_la-xftell.Tpo .deps/libkpathsea_la-xftell.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xftello.lo -MD -MP -MF .deps/libkpathsea_la-xftello.Tpo -c -o libkpathsea_la-xftello.lo `test -f 'xftello.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xftello.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xftello.lo -MD -MP -MF .deps/libkpathsea_la-xftello.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xftello.c -o libkpathsea_la-xftello.o
+mv -f .deps/libkpathsea_la-xftello.Tpo .deps/libkpathsea_la-xftello.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xgetcwd.lo -MD -MP -MF .deps/libkpathsea_la-xgetcwd.Tpo -c -o libkpathsea_la-xgetcwd.lo `test -f 'xgetcwd.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xgetcwd.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xgetcwd.lo -MD -MP -MF .deps/libkpathsea_la-xgetcwd.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xgetcwd.c -o libkpathsea_la-xgetcwd.o
+mv -f .deps/libkpathsea_la-xgetcwd.Tpo .deps/libkpathsea_la-xgetcwd.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xmalloc.lo -MD -MP -MF .deps/libkpathsea_la-xmalloc.Tpo -c -o libkpathsea_la-xmalloc.lo `test -f 'xmalloc.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xmalloc.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xmalloc.lo -MD -MP -MF .deps/libkpathsea_la-xmalloc.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xmalloc.c -o libkpathsea_la-xmalloc.o
+mv -f .deps/libkpathsea_la-xmalloc.Tpo .deps/libkpathsea_la-xmalloc.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xopendir.lo -MD -MP -MF .deps/libkpathsea_la-xopendir.Tpo -c -o libkpathsea_la-xopendir.lo `test -f 'xopendir.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xopendir.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xopendir.lo -MD -MP -MF .deps/libkpathsea_la-xopendir.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xopendir.c -o libkpathsea_la-xopendir.o
+mv -f .deps/libkpathsea_la-xopendir.Tpo .deps/libkpathsea_la-xopendir.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xputenv.lo -MD -MP -MF .deps/libkpathsea_la-xputenv.Tpo -c -o libkpathsea_la-xputenv.lo `test -f 'xputenv.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xputenv.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xputenv.lo -MD -MP -MF .deps/libkpathsea_la-xputenv.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xputenv.c -o libkpathsea_la-xputenv.o
+mv -f .deps/libkpathsea_la-xputenv.Tpo .deps/libkpathsea_la-xputenv.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xrealloc.lo -MD -MP -MF .deps/libkpathsea_la-xrealloc.Tpo -c -o libkpathsea_la-xrealloc.lo `test -f 'xrealloc.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xrealloc.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xrealloc.lo -MD -MP -MF .deps/libkpathsea_la-xrealloc.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xrealloc.c -o libkpathsea_la-xrealloc.o
+mv -f .deps/libkpathsea_la-xrealloc.Tpo .deps/libkpathsea_la-xrealloc.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xstat.lo -MD -MP -MF .deps/libkpathsea_la-xstat.Tpo -c -o libkpathsea_la-xstat.lo `test -f 'xstat.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xstat.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xstat.lo -MD -MP -MF .deps/libkpathsea_la-xstat.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xstat.c -o libkpathsea_la-xstat.o
+mv -f .deps/libkpathsea_la-xstat.Tpo .deps/libkpathsea_la-xstat.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL  -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xstrdup.lo -MD -MP -MF .deps/libkpathsea_la-xstrdup.Tpo -c -o libkpathsea_la-xstrdup.lo `test -f 'xstrdup.c' || echo '/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/'`xstrdup.c
+libtool: compile:  emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/.. -DMAKE_KPSE_DLL -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT libkpathsea_la-xstrdup.lo -MD -MP -MF .deps/libkpathsea_la-xstrdup.Tpo -c /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/xstrdup.c -o libkpathsea_la-xstrdup.o
+mv -f .deps/libkpathsea_la-xstrdup.Tpo .deps/libkpathsea_la-xstrdup.Plo
+/bin/bash ./libtool --tag=CC   --mode=link emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -version-info 6:0:0  -o libkpathsea.la -rpath /usr/local/lib/x86_64-unknown-linux-gnu libkpathsea_la-tex-file.lo libkpathsea_la-absolute.lo libkpathsea_la-atou.lo libkpathsea_la-cnf.lo libkpathsea_la-concat.lo libkpathsea_la-concat3.lo libkpathsea_la-concatn.lo libkpathsea_la-db.lo libkpathsea_la-debug.lo libkpathsea_la-dir.lo libkpathsea_la-elt-dirs.lo libkpathsea_la-expand.lo libkpathsea_la-extend-fname.lo libkpathsea_la-file-p.lo libkpathsea_la-find-suffix.lo libkpathsea_la-fn.lo libkpathsea_la-fontmap.lo libkpathsea_la-getopt.lo libkpathsea_la-getopt1.lo libkpathsea_la-hash.lo libkpathsea_la-kdefault.lo libkpathsea_la-kpathsea.lo libkpathsea_la-line.lo libkpathsea_la-magstep.lo libkpathsea_la-make-suffix.lo libkpathsea_la-path-elt.lo libkpathsea_la-pathsearch.lo libkpathsea_la-proginit.lo libkpathsea_la-progname.lo libkpathsea_la-readable.lo libkpathsea_la-rm-suffix.lo libkpathsea_la-str-list.lo libkpathsea_la-str-llist.lo libkpathsea_la-tex-glyph.lo libkpathsea_la-tex-hush.lo libkpathsea_la-tex-make.lo libkpathsea_la-tilde.lo libkpathsea_la-truncate.lo libkpathsea_la-uppercasify.lo libkpathsea_la-variable.lo libkpathsea_la-version.lo libkpathsea_la-xbasename.lo libkpathsea_la-xcalloc.lo libkpathsea_la-xdirname.lo libkpathsea_la-xfopen.lo libkpathsea_la-xfseek.lo libkpathsea_la-xfseeko.lo libkpathsea_la-xftell.lo libkpathsea_la-xftello.lo libkpathsea_la-xgetcwd.lo libkpathsea_la-xmalloc.lo libkpathsea_la-xopendir.lo libkpathsea_la-xputenv.lo libkpathsea_la-xrealloc.lo libkpathsea_la-xstat.lo libkpathsea_la-xstrdup.lo   
+libtool: link: /home/dmonad/utils/emsdk_portable/emscripten/master/emar cru .libs/libkpathsea.a  libkpathsea_la-tex-file.o libkpathsea_la-absolute.o libkpathsea_la-atou.o libkpathsea_la-cnf.o libkpathsea_la-concat.o libkpathsea_la-concat3.o libkpathsea_la-concatn.o libkpathsea_la-db.o libkpathsea_la-debug.o libkpathsea_la-dir.o libkpathsea_la-elt-dirs.o libkpathsea_la-expand.o libkpathsea_la-extend-fname.o libkpathsea_la-file-p.o libkpathsea_la-find-suffix.o libkpathsea_la-fn.o libkpathsea_la-fontmap.o libkpathsea_la-getopt.o libkpathsea_la-getopt1.o libkpathsea_la-hash.o libkpathsea_la-kdefault.o libkpathsea_la-kpathsea.o libkpathsea_la-line.o libkpathsea_la-magstep.o libkpathsea_la-make-suffix.o libkpathsea_la-path-elt.o libkpathsea_la-pathsearch.o libkpathsea_la-proginit.o libkpathsea_la-progname.o libkpathsea_la-readable.o libkpathsea_la-rm-suffix.o libkpathsea_la-str-list.o libkpathsea_la-str-llist.o libkpathsea_la-tex-glyph.o libkpathsea_la-tex-hush.o libkpathsea_la-tex-make.o libkpathsea_la-tilde.o libkpathsea_la-truncate.o libkpathsea_la-uppercasify.o libkpathsea_la-variable.o libkpathsea_la-version.o libkpathsea_la-xbasename.o libkpathsea_la-xcalloc.o libkpathsea_la-xdirname.o libkpathsea_la-xfopen.o libkpathsea_la-xfseek.o libkpathsea_la-xfseeko.o libkpathsea_la-xftell.o libkpathsea_la-xftello.o libkpathsea_la-xgetcwd.o libkpathsea_la-xmalloc.o libkpathsea_la-xopendir.o libkpathsea_la-xputenv.o libkpathsea_la-xrealloc.o libkpathsea_la-xstat.o libkpathsea_la-xstrdup.o
+libtool: link: /home/dmonad/utils/emsdk_portable/emscripten/master/emranlib .libs/libkpathsea.a
+libtool: link: ( cd ".libs" && rm -f "libkpathsea.la" && ln -s "../libkpathsea.la" "libkpathsea.la" )
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/..   -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT access.o -MD -MP -MF .deps/access.Tpo -c -o access.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/access.c
+mv -f .deps/access.Tpo .deps/access.Po
+/bin/bash ./libtool --tag=CC   --mode=link emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE   -o kpseaccess access.o  
+libtool: link: emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -o kpseaccess access.o 
+clang-3.9: warning: argument unused during compilation: '-nostdinc'
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/..   -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT readlink.o -MD -MP -MF .deps/readlink.Tpo -c -o readlink.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/readlink.c
+mv -f .deps/readlink.Tpo .deps/readlink.Po
+/bin/bash ./libtool --tag=CC   --mode=link emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE   -o kpsereadlink readlink.o  
+libtool: link: emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -o kpsereadlink readlink.o 
+clang-3.9: warning: argument unused during compilation: '-nostdinc'
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/..   -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT kpsestat.o -MD -MP -MF .deps/kpsestat.Tpo -c -o kpsestat.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/kpsestat.c
+mv -f .deps/kpsestat.Tpo .deps/kpsestat.Po
+/bin/bash ./libtool --tag=CC   --mode=link emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE   -o kpsestat kpsestat.o  
+libtool: link: emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -o kpsestat kpsestat.o 
+clang-3.9: warning: argument unused during compilation: '-nostdinc'
+emcc -DHAVE_CONFIG_H -I. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea -I./.. -I/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/..   -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -MT kpsewhich.o -MD -MP -MF .deps/kpsewhich.Tpo -c -o kpsewhich.o /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/kpsewhich.c
+mv -f .deps/kpsewhich.Tpo .deps/kpsewhich.Po
+/bin/bash ./libtool --tag=CC   --mode=link emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE   -o kpsewhich kpsewhich.o libkpathsea.la 
+libtool: link: emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -o kpsewhich kpsewhich.o  ./.libs/libkpathsea.a
+clang-3.9: warning: argument unused during compilation: '-nostdinc'
+make[4]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+Making all in doc
+make[4]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea/doc'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea/doc'
+Making all in man
+make[4]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea/man'
+cp /dev/null sedscript
+sed -n -e '/^#define/s/#define[ 	][ 	]*\([A-Z_a-z][A-Z_a-z]*\)[ 	][ 	]*\(.*\)/s%@\1@%\2%/p' \
+	../../kpathsea/paths.h \
+  | sed -e 's/"//g' -e 's/[ 	]*\/\*[^*]*\*\///g' >>sedscript
+echo 's%@VER''SION@%6.0.0%'	>>sedscript
+echo 's%@BINDIR@%/usr/local/bin/x86_64-unknown-linux-gnu%'		>>sedscript
+echo 's%@INFODIR@%/usr/local/texmf/doc/info%'		>>sedscript
+echo 's%@TEXINPUTDIR@%%'	>>sedscript
+echo 's%@MFINPUTDIR@%%'	>>sedscript
+echo 's%@MPINPUTDIR@%%'	>>sedscript
+echo 's%@FONTDIR@%%'		>>sedscript
+echo 's%@FMTDIR@%%'		>>sedscript
+echo 's%@BASEDIR@%%'		>>sedscript
+echo 's%@MEMDIR@%%'		>>sedscript
+echo 's%@TEXPOOLDIR@%%'	>>sedscript
+echo 's%@MFPOOLDIR@%%'	>>sedscript
+echo 's%@MPPOOLDIR@%%'	>>sedscript
+echo 's%@FONTMAPDIR@%%'	>>sedscript
+echo 's%@LOCALMODES@%%'	>>sedscript
+sed -f sedscript /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/man/kpseaccess.man >kpseaccess.1
+sed -f sedscript /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/man/kpsereadlink.man >kpsereadlink.1
+sed -f sedscript /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/man/kpsestat.man >kpsestat.1
+sed -f sedscript /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/man/kpsewhich.man >kpsewhich.1
+sed -f sedscript /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/man/mktexlsr.man >mktexlsr.1
+sed -f sedscript /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/man/mktexmf.man >mktexmf.1
+sed -f sedscript /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/man/mktexpk.man >mktexpk.1
+sed -f sedscript /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/kpathsea/man/mktextfm.man >mktextfm.1
+make[4]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea/man'
+make[3]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+make[2]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+cd ./../kpathsea && make  rebuild
+make[2]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+make  all-recursive
+make[3]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+Making all in .
+make[4]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+Making all in doc
+make[4]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea/doc'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea/doc'
+Making all in man
+make[4]: Entering directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea/man'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea/man'
+make[3]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+make[2]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea'
+/bin/bash ./libtool --tag=CC   --mode=link emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE   -o tangleboot tangleboot.o lib/lib.a /home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea/libkpathsea.la -lm 
+libtool: link: emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -DELIDE_CODE -o tangleboot tangleboot.o  lib/lib.a /home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/kpathsea/.libs/libkpathsea.a -lm
+clang-3.9: warning: argument unused during compilation: '-nostdinc'
+WEBINPUTS=.:/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c WEBINPUTS=.:/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c TEXMFCNF=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/../kpathsea ./tangleboot tangle tangle
+warning: kpathsea: configuration file texmf.cnf not found in these directories: /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/web2c/../kpathsea.
+./tangleboot: fatal: web file `tangle.web' not found.
+Makefile:8738: recipe for target 'tangle.p' failed
+make[1]: *** [tangle.p] Error 1
+make[1]: Leaving directory '/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk/web2c'

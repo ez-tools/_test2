@@ -1,0 +1,31 @@
+FoFiBase.o: \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/fofi/FoFiBase.cc \
+  aconf.h aconf2.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stdio.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__config \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdio.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/features.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/alltypes.h \
+  goo/gmem.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/fofi/FoFiBase.h \
+  goo/gtypes.h
+
+aconf.h:
+
+aconf2.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stdio.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__config:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdio.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/features.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/alltypes.h:
+
+goo/gmem.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/fofi/FoFiBase.h:
+
+goo/gtypes.h:

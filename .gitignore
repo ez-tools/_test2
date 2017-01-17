@@ -10,9 +10,9 @@
 ./src/pdftex-worker-generated.js
 ./src/pdftex-worker.js
 ./src/pdftex-worker.js.map
+./src/pdftex-worker.js.mem
+./src/pdftex-worker.data
 ./src/texlive
 ./src/texlive-files.js
 ./src/texlive.lst
 ./.stage
-./src/pdftex-worker.js.mem
-./src/pdftex-worker.data

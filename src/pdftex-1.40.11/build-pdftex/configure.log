@@ -1,0 +1,310 @@
+configure: creating cache config.cache
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for gcc... emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether emcc accepts -g... yes
+checking for emcc option to accept ISO C89... none needed
+checking for native WIN32 or MINGW32... no
+configure: Assuming `--enable-chktex=no'
+configure: Assuming `--enable-dialog=no'
+configure: Assuming `--enable-ps2eps=no'
+configure: Assuming `--enable-psutils=no'
+configure: Assuming `--enable-t1utils=no'
+configure: Assuming `--enable-tpic2pdftex=no'
+configure: Assuming `--enable-vlna=no'
+configure: Assuming `--enable-xindy=no'
+configure: Assuming `--with-clisp-runtime=default'
+configure: `--without-x' -> `--disable-xpdfopen'
+configure: Assuming `--enable-web2c=no'
+configure: Assuming `--enable-afm2pl=no'
+configure: Assuming `--enable-bibtex8=no'
+configure: Assuming `--enable-bibtexu=no'
+configure: Assuming `--enable-cjkutils=no'
+configure: Assuming `--enable-detex=no'
+configure: Assuming `--enable-devnag=no'
+configure: Assuming `--enable-dtl=no'
+configure: Assuming `--enable-dvi2tty=no'
+configure: Assuming `--enable-dvidvi=no'
+configure: Assuming `--enable-dviljk=no'
+configure: Assuming `--enable-dvipdfmx=no'
+configure: Assuming `--enable-dvipng=no'
+configure: Assuming `--enable-dvipos=no'
+configure: Assuming `--enable-dvipsk=no'
+configure: Assuming `--enable-dvisvgm=no'
+configure: Assuming `--enable-gsftopk=no'
+configure: Assuming `--enable-lacheck=no'
+configure: Assuming `--enable-lcdf-typetools=no'
+configure: Assuming `--enable-makeindexk=no'
+configure: Assuming `--enable-makejvf=no'
+configure: Assuming `--enable-mendexk=no'
+configure: Assuming `--enable-musixflx=no'
+configure: Assuming `--enable-ps2pkm=no'
+configure: Assuming `--enable-seetexk=no'
+configure: Assuming `--enable-tex4htk=no'
+configure: Assuming `--enable-ttf2pk=no'
+configure: Assuming `--enable-ttfdump=no'
+configure: Assuming `--enable-xdv2pdf=no'
+configure: `--without-x' -> `--disable-xdvik'
+configure: Assuming `--enable-xdvipdfmx=no'
+configure: Assuming `--enable-tetex=no'
+configure: Assuming `--enable-texlive=no'
+configure: Using `icu' headers and library from TL tree
+configure: Using `teckit' headers and library from TL tree
+configure: Using `graphite' headers and library from TL tree
+configure: Assuming `zziplib' headers and library from TL tree
+configure: Using `xpdf' headers and library from TL tree
+configure: Using `gd' headers and library from TL tree
+configure: Using `freetype2' headers and library from TL tree
+configure: Using `freetype' headers and library from TL tree
+configure: Using `t1lib' headers and library from TL tree
+configure: Using `libpng' headers and library from TL tree
+configure: Using `zlib' headers and library from TL tree
+configure: Using `ptexenc' headers and library from TL tree
+configure: Using `kpathsea' headers and library from TL tree
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for style of include used by make... GNU
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by emcc... /home/dmonad/utils/emsdk_portable/emscripten/master/emcc
+checking if the linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm
+checking the name lister (/home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /home/dmonad/utils/emsdk_portable/emscripten/master/emcc option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... /home/dmonad/utils/emsdk_portable/emscripten/master/emar
+checking for strip... strip
+checking for ranlib... /home/dmonad/utils/emsdk_portable/emscripten/master/emranlib
+checking command to parse /home/dmonad/utils/emsdk_portable/clang/fastcomp/build_master_64/bin/llvm-nm output from emcc object... ok
+checking how to run the C preprocessor... emcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking dependency style of emcc... gcc3
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for objdir... .libs
+checking if emcc supports -fno-rtti -fno-exceptions... yes
+checking for emcc option to produce PIC... -fPIC -DPIC
+checking if emcc PIC flag -fPIC -DPIC works... yes
+checking if emcc static flag -static works... yes
+checking if emcc supports -c -o file.o... yes
+checking if emcc supports -c -o file.o... (cached) yes
+checking whether the emcc linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for _LARGEFILE_SOURCE value needed for large files... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking whether closedir returns void... no
+checking assert.h usability... yes
+checking assert.h presence... yes
+checking for assert.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for memory.h... (cached) yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking for unistd.h... (cached) yes
+checking for putenv... yes
+checking for strcasecmp... yes
+checking for strtol... yes
+checking for strstr... yes
+checking for bcmp... yes
+checking for bcopy... yes
+checking for bzero... yes
+checking for getcwd... yes
+checking for getwd... yes
+checking for index... yes
+checking for memcmp... yes
+checking for memcpy... yes
+checking for mkstemp... yes
+checking for mktemp... yes
+checking for rindex... yes
+checking for strchr... yes
+checking for strrchr... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for size_t... yes
+checking for struct stat.st_mtim... yes
+checking whether the compiler accepts prototypes... yes
+checking whether program_invocation_name is predefined... yes
+checking what warning flags to pass to the C compiler... -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas
+checking for X... disabled
+checking whether we are using the GNU C++ compiler... yes
+checking whether /home/dmonad/utils/emsdk_portable/emscripten/master/em++ accepts -g... yes
+checking dependency style of /home/dmonad/utils/emsdk_portable/emscripten/master/em++... gcc3
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether /home/dmonad/utils/emsdk_portable/emscripten/master/em++ accepts -g... (cached) yes
+checking dependency style of /home/dmonad/utils/emsdk_portable/emscripten/master/em++... (cached) gcc3
+checking what warning flags to pass to the C++ compiler... -Wimplicit -Wreturn-type -Wno-unknown-pragmas
+checking how to run the C++ preprocessor... /home/dmonad/utils/emsdk_portable/emscripten/master/em++ -E
+checking for ld used by /home/dmonad/utils/emsdk_portable/emscripten/master/em++... /home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64
+checking if the linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64) is GNU ld... no
+checking whether the /home/dmonad/utils/emsdk_portable/emscripten/master/em++ linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64) supports shared libraries... yes
+checking for /home/dmonad/utils/emsdk_portable/emscripten/master/em++ option to produce PIC... -fPIC -DPIC
+checking if /home/dmonad/utils/emsdk_portable/emscripten/master/em++ PIC flag -fPIC -DPIC works... yes
+checking if /home/dmonad/utils/emsdk_portable/emscripten/master/em++ static flag -static works... yes
+checking if /home/dmonad/utils/emsdk_portable/emscripten/master/em++ supports -c -o file.o... yes
+checking if /home/dmonad/utils/emsdk_portable/emscripten/master/em++ supports -c -o file.o... (cached) yes
+checking whether the /home/dmonad/utils/emsdk_portable/emscripten/master/em++ linker (/home/dmonad/utils/emsdk_portable/emscripten/master/emcc -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... unsupported
+checking whether ln -s works... yes
+checking for TeX specific libraries to build... 
+checking for freetype-config... no
+checking for pkg-config... pkg-config
+checking for icu-config... no
+configure: updating cache config.cache
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+config.status: executing libtool commands
+=== configuring in auxdir/auxsub (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/auxdir/auxsub)
+configure: running /bin/bash /home/dmonad/git/_test2/src/pdftex-1.40.11/src/auxdir/auxsub/configure --disable-option-checking '--prefix=/usr/local'  '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' --cache-file=../../config.cache --srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/auxdir/auxsub
+configure: loading cache ../../config.cache
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in libs (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/libs)
+configure: running /bin/bash /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/configure --disable-option-checking '--prefix=/usr/local'  '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' --cache-file=../config.cache --srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs
+configure: loading cache ../config.cache
+checking build system type... (cached) x86_64-unknown-linux-gnu
+checking host system type... (cached) x86_64-unknown-linux-gnu
+checking for gcc... (cached) emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether emcc accepts -g... (cached) yes
+checking for emcc option to accept ISO C89... (cached) none needed
+checking for native WIN32 or MINGW32... (cached) no
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking for style of include used by make... GNU
+checking dependency style of emcc... (cached) gcc3
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for generic libraries to build... 
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+=== configuring in utils (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/utils)
+configure: running /bin/bash /home/dmonad/git/_test2/src/pdftex-1.40.11/src/utils/configure --disable-option-checking '--prefix=/usr/local'  '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' --cache-file=../config.cache --srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/utils
+configure: loading cache ../config.cache
+checking build system type... (cached) x86_64-unknown-linux-gnu
+checking host system type... (cached) x86_64-unknown-linux-gnu
+checking for gcc... (cached) emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether emcc accepts -g... (cached) yes
+checking for emcc option to accept ISO C89... (cached) none needed
+checking for native WIN32 or MINGW32... (cached) no
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking for style of include used by make... GNU
+checking dependency style of emcc... (cached) gcc3
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for Utils programs to build... 
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+=== configuring in texk (/home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex/texk)
+configure: running /bin/bash /home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk/configure --disable-option-checking '--prefix=/usr/local'  '--enable-native-texlive-build' '--enable-cxx-runtime-hack' '--disable-shared' '--disable-largefile' '--without-x' '--disable-ptex' '--without-system-freetype' '--without-system-freetype2' '--without-system-gd' '--without-system-graphite' '--without-system-icu' '--without-system-kpathsea' '--without-system-libpng' '--without-system-ptexenc' '--without-system-t1lib' '--without-system-teckit' '--without-system-xpdf' '--without-system-zlib' '--disable-all-pkgs' '--enable-pdftex' '--enable-static' 'CC=emcc' 'CFLAGS=-DELIDE_CODE' 'CXX=/home/dmonad/utils/emsdk_portable/emscripten/master/em++' '--enable-multiplatform=yes' '--enable-libtool-hack=yes' '--enable-texlive-build' '--bindir=${exec_prefix}/bin/x86_64-unknown-linux-gnu' '--libdir=${exec_prefix}/lib/x86_64-unknown-linux-gnu' '--enable-chktex=no' '--enable-dialog=no' '--enable-ps2eps=no' '--enable-psutils=no' '--enable-t1utils=no' '--enable-tpic2pdftex=no' '--enable-vlna=no' '--enable-xindy=no' '--with-clisp-runtime=default' '--disable-xpdfopen' '--enable-web2c=no' '--enable-afm2pl=no' '--enable-bibtex8=no' '--enable-bibtexu=no' '--enable-cjkutils=no' '--enable-detex=no' '--enable-devnag=no' '--enable-dtl=no' '--enable-dvi2tty=no' '--enable-dvidvi=no' '--enable-dviljk=no' '--enable-dvipdfmx=no' '--enable-dvipng=no' '--enable-dvipos=no' '--enable-dvipsk=no' '--enable-dvisvgm=no' '--enable-gsftopk=no' '--enable-lacheck=no' '--enable-lcdf-typetools=no' '--enable-makeindexk=no' '--enable-makejvf=no' '--enable-mendexk=no' '--enable-musixflx=no' '--enable-ps2pkm=no' '--enable-seetexk=no' '--enable-tex4htk=no' '--enable-ttf2pk=no' '--enable-ttfdump=no' '--enable-xdv2pdf=no' '--disable-xdvik' '--enable-xdvipdfmx=no' '--enable-tetex=no' '--enable-texlive=no' '--with-system-zziplib=no' '--mandir=${prefix}/texmf/doc/man' '--infodir=${prefix}/texmf/doc/info' --cache-file=../config.cache --srcdir=/home/dmonad/git/_test2/src/pdftex-1.40.11/src/texk
+configure: loading cache ../config.cache
+checking build system type... (cached) x86_64-unknown-linux-gnu
+checking host system type... (cached) x86_64-unknown-linux-gnu
+checking for gcc... (cached) emcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether emcc accepts -g... (cached) yes
+checking for emcc option to accept ISO C89... (cached) none needed
+checking for native WIN32 or MINGW32... (cached) no
+checking for a BSD-compatible install... (cached) /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) gawk
+checking whether make sets $(MAKE)... (cached) yes
+checking for style of include used by make... GNU
+checking dependency style of emcc... (cached) gcc3
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for TeXk programs to build... 
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+
+** Configuration summary for TeX Live 2010-07-20:
+
+   compiling for x86_64-unknown-linux-gnu
+      in /home/dmonad/git/_test2/src/pdftex-1.40.11/build-pdftex
+      from sources in /home/dmonad/git/_test2/src/pdftex-1.40.11/src
+
+   prefix:                       /usr/local
+   enable_native_texlive_build:  yes
+   enable_shared:                no
+   enable_multiplatform:         yes
+   enable_cxx_runtime_hack:      yes
+   enable_libtool_hack:          yes
+   enable_compiler_warnings:     min
+
+** Next run `make' to configure and build each library and program.
+

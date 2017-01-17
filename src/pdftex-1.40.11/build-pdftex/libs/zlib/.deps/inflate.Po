@@ -1,0 +1,95 @@
+inflate.o: \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/inflate.c \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/zutil.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/zlib.h \
+  zconf.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/sys/types.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/features.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/alltypes.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/endian.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdint.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/stdint.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/sys/select.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/sys/sysmacros.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/unistd.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/posix.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stddef.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__config \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stddef.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/strings.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stdlib.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/stdlib.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdlib.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/alloca.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/errno.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/errno.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/errno.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/inftrees.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/inflate.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/inffast.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/inffixed.h
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/zutil.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/zlib.h:
+
+zconf.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/sys/types.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/features.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/alltypes.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/endian.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdint.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/stdint.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/sys/select.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/sys/sysmacros.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/unistd.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/posix.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stddef.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__config:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stddef.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/strings.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stdlib.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/stdlib.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdlib.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/alloca.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/errno.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/errno.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/errno.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/inftrees.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/inflate.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/inffast.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/zlib/zlib-1.2.3/inffixed.h:

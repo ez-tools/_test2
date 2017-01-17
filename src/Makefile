@@ -99,14 +99,14 @@ pdftex-worker.js: compile_bc compile_lib compile_kpathsea texlive-files.js
 #		emcc -v --minify 0 --closure 0 -s FS_LOG=1 -s TOTAL_MEMORY=67108864 -O2 -g3 $$OBJFILES pdftex.bc -s INVOKE_RUN=0 --pre-js pre.js --post-js post.js -o pdftex-worker-generated.js
 	rm tmp.js
 
-dist: pdftex-worker.js
+dist:
 	cat texlive-files.js > tmp.js
 	cat pdftex-worker-pre.js >> tmp.js
 	OBJFILES=$$(for i in `find ${SOURCE_DIR}/build-pdftex/texk/web2c/lib ${SOURCE_DIR}/build-pdftex/texk/kpathsea -name '*.o'` ; do llvm-nm $$i | grep main >/dev/null || echo $$i ; done) && \
 		emcc -s INVOKE_RUN=0 --memory-init-file 1 -v --closure 0 -s TOTAL_MEMORY=67108864 -s FORCE_FILESYSTEM=1 $$OBJFILES pdftex.bc -o pdftex-worker.js --post-js pdftex-worker-post.js --pre-js tmp.js -O3
 	rm tmp.js
 
-dev: pdftex-worker.js
+dev:
 	cat texlive-files.js > tmp.js
 	cat pdftex-worker-pre.js >> tmp.js
 	OBJFILES=$$(for i in `find ${SOURCE_DIR}/build-pdftex/texk/web2c/lib ${SOURCE_DIR}/build-pdftex/texk/kpathsea -name '*.o'` ; do llvm-nm $$i | grep main >/dev/null || echo $$i ; done) && \

@@ -1,0 +1,147 @@
+PSOutputDev.o: \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/PSOutputDev.cc \
+  aconf.h aconf2.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stdio.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__config \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdio.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/features.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/alltypes.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stddef.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stddef.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__nullptr \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/stdarg.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdarg.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/signal.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/signal.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/math.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/math.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/math.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/type_traits \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/cstddef \
+  goo/GString.h goo/gtypes.h goo/GList.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/config.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/GlobalParams.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/CharTypes.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Object.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/string.h \
+  /home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/strings.h \
+  goo/gmem.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Array.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Dict.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Stream.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Error.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Function.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Gfx.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/GfxState.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/GfxFont.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/UnicodeMap.h \
+  fofi/FoFiType1C.h fofi/FoFiBase.h fofi/FoFiTrueType.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Catalog.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Page.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Annot.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/XRef.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/PreScanOutputDev.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/OutputDev.h \
+  /home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/PSOutputDev.h
+
+aconf.h:
+
+aconf2.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stdio.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__config:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdio.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/features.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/alltypes.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/stddef.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stddef.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/__nullptr:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/stdarg.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/stdarg.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/signal.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/bits/signal.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/math.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/math.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/math.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/type_traits:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/cstddef:
+
+goo/GString.h:
+
+goo/gtypes.h:
+
+goo/GList.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/config.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/GlobalParams.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/CharTypes.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Object.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libcxx/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/compat/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/string.h:
+
+/home/dmonad/utils/emsdk_portable/emscripten/master/system/include/libc/strings.h:
+
+goo/gmem.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Array.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Dict.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Stream.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Error.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Function.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Gfx.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/GfxState.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/GfxFont.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/UnicodeMap.h:
+
+fofi/FoFiType1C.h:
+
+fofi/FoFiBase.h:
+
+fofi/FoFiTrueType.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Catalog.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Page.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/Annot.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/XRef.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/PreScanOutputDev.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/OutputDev.h:
+
+/home/dmonad/git/_test2/src/pdftex-1.40.11/src/libs/xpdf/xpdf-3.02/xpdf/PSOutputDev.h:
