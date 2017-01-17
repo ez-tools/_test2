@@ -22,7 +22,7 @@
         "stageDir": ".stage",
         "files": ["README.md", "pdftex.js*", "package.json", "example.htm", "bower.json", "src/pdftex-worker.js*", "src/texlive/**"],
         "pkgFiles": null,
-        "beforeStageCommand": "rm -rf *",
+        "beforeStageCommand": "",
         "afterReleaseCommand": ""
     },
     "npm": {
