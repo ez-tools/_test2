@@ -29,7 +29,7 @@
           "src/texlive/**"
         ],
         "pkgFiles": null,
-        "beforeStageCommand": "cp ../src/pdftex-worker.* src",
+        "beforeStageCommand": "cp ../src/pdftex-worker.js src && ls ../src -al && ls -al ../src",
         "afterReleaseCommand": ""
     },
     "npm": {
